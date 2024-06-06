@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Barnouin Clément</title>
+    <link rel="icon" href="images/portfoliologo.webp" sizes="32x32" type="image/png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.css" />
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="navhaut">
+                <h2>PORTFOLIO.</h2>
+                    <ul class='nav-bar'>
+                    <input type='checkbox' id='check' />
+                    <span class="menu">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="about.html">A propos</a></li>
+                <li><a href="projects.html">Portfolio</a></li>
+                <li><a class="actif" href="contact.html">Contact</a></li>
+                <label for="check" class="close-menu"><i class="fas fa-times"></i></label>
+            </span>
+            <label for="check" class="open-menu"><i class="fas fa-bars"></i></label>
+            </ul>
+            <div class="menu-langue">
+                <div class="selection-langue">
+                    Français
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Contact Information Section -->
+        <section id="contact-info">
+            <div class="container">
+                <h2>Informations <span>Personnelles</span></h2>
+                <div class="info-map">
+                    <div class="map">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d1988.208108650673!2d5.718216067671599!3d45.19213907410389!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sfr!2sfr!4v1717354845331!5m2!1sfr!2sfr" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                    <div class="info-content">
+                        <div class="info-item">
+                            <i class="fas fa-phone-alt"></i>
+                            <p>Téléphone : <a href="tel:+33 7 69 45 10 16">+33 7 69 45 10 16</a></p>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-envelope"></i>
+                            <p>Email : <a href="mailto:clement.barnouin.pro@gmail.com">clement.barnouin.pro@gmail.com</a></p>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-envelope"></i>
+                            <p>Email Institutionnel : <a href="mailto:clement.barnouin@etu.univ-grenoble-alpes.fr">clement.barnouin@etu.univ-grenoble-alpes.fr</a></p>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-home"></i>
+                            <p>Habitation : 1 Allée de la Petite Mécanique, 38450 Vif</p>
+                        </div>
+                        <div class="info-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <p>Travail : 2 Pl. Doyen Gosse, 38000 Grenoble, France</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+        <!-- Contact Form Section -->
+        <section id="contact">
+            <div class="container">
+                <h2>Me <span>Contacter</span></h2>
+                <form action="#">
+                    <div class="form-group">
+                        <input type="text" name="full_name" placeholder="Nom" required>
+                        <input type="email" name="email_address" placeholder="Adresse Mail" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="tel" name="mobile_number" placeholder="Numéro de Téléphone" required>
+                        <input type="text" name="email_subject" placeholder="Sujet du Mail" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea name="message" placeholder="Votre Message" required></textarea>
+                    </div>
+                    <button class="btn2" type="submit">Envoyer un Message !</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <div id="main-container">
+            <ul class="social-container">
+                <li class="item">
+                    <a href="https://www.linkedin.com/in/clément-barnouin-7ab4702a2/" target="_blank"
+                        title="Linkedin">
+                        <span class="fab fa-linkedin"></span>
+                        <span class="bg link-bg"></span>
+                        <span>Linkedin</span>
+                    </a>
+                </li>
+                <li class="item">
+                    <a href="https://github.com/1Luckyle" target="_blank"
+                        title="Github">
+                        <span class="fab fa-github"></span>
+                        <span class="bg github-bg"></span>
+                        <span>Github</span>
+                    </a>
+                </li>
+                <li class="item">
+                    <a href="https://www.gricad-gitlab.univ-grenoble-alpes.fr/barnouic1" target="_blank"
+                        title="GitLab">
+                        <span class="fab fa-gitlab"></span>
+                        <span class="bg gitlab-bg"></span>
+                        <span>GitLab</span>
+                    </a>
+                </li>
+        </div>
+        <div>
+            <span>Copyright © 2024. Tout droits réservés.</span>
+            <span>Réalisé par Barnouin Clément.</span>
+        </div>
+    </footer>
+    
+</body>
+</html>

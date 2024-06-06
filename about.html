@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Barnouin Clément</title>
+    <link rel="icon" href="images/portfoliologo.webp" sizes="32x32" type="image/png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.css" />
+    <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="navhaut">
+                <h2>PORTFOLIO.</h2>
+                    <ul class='nav-bar'>
+                    <input type='checkbox' id='check' />
+                    <span class="menu">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a class="actif" href="about.html">A propos</a></li>
+                <li><a href="projects.html">Portfolio</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <label for="check" class="close-menu"><i class="fas fa-times"></i></label>
+            </span>
+            <label for="check" class="open-menu"><i class="fas fa-bars"></i></label>
+            </ul>
+            <div class="menu-langue">
+                <div class="selection-langue">
+                    Français
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Introduction Section -->
+        <section id="about-intro">
+            <div class="container">
+                <h2>À propos de <span>Moi</span></h2>
+                <p>Je suis Clément Barnouin, un étudiant en informatique, de 19ans, passionné par la création de solutions innovantes et efficaces. En première année d'étude, je me spécialise dans les technologies frontend et backend, toujours à la recherche de nouveaux défis et opportunités pour apprendre et grandir professionnellement.</p>
+            </div>
+        </section>
+    
+        <!-- Skills Section -->
+        <section id="skills">
+            <div class="container">
+                <h2>Mes <span>Compétences</span></h2>
+                <div class="skills-content">
+                    <div class="skill-card" data-skill="frontend">
+                        <h3>Frontend</h3>
+                        <ul>
+                            <li><i class="fa-brands fa-html5"></i> HTML</li>
+                            <li><i class="fa-brands fa-css3-alt"></i> CSS</li>
+                            <li><i class="fa-brands fa-js"></i> JavaScript</li>
+                        </ul>
+                    </div>
+                    <div class="skill-card" data-skill="backend">
+                        <h3>Backend</h3>
+                        <ul>
+                            <li><i class="fa-brands fa-java"></i> Java</li>
+                            <li><i class="fa-solid fa-database"></i> PostgreSQL</li>
+                        </ul>
+                    </div>
+                    <div class="skill-card" data-skill="tools">
+                        <h3>Outils & Technologies</h3>
+                        <ul>
+                            <li><i class="fa-brands fa-git-alt"></i><i class="fa-brands fa-github"></i> Git & GitHub</li>
+                            <li><i class="fa-brands fa-gitlab"></i> GitLab</li>
+                            <li><i class="fa-brands fa-java"></i> JavaFx</li>
+                            <li><i class="fa-solid fa-code"></i> Visual Studio Code</li>
+                            <li><i class="fa-regular fa-file-code"></i></i> Intellij IDEA</li>
+                            <li><i class="fa-solid fa-terminal"></i> Terminal</li>
+                            <li><i class="fa-solid fa-network-wired"></i> WireShark</li>
+                            <li><i class="fa-solid fa-r"></i> R Studio</li>
+                            <li><i class="fa-solid fa-cogs"></i> Exodus - Assembleur 68000</li>
+                            <li><i class="fa-solid fa-file-word"></i>Suite Office 365</li>
+                            <li><i class="fa-solid fa-book"></i> UML</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+        <!-- Experience Section -->
+        <section id="experience">
+            <div class="container">
+                <h2>Mon <span>Expérience</span></h2>
+                <div class="experience-content">
+                    <div class="experience-item">
+                        <h3>Contractuel / Emploi d'Été</h3>
+                        <h4>Département de l'Isère, Château de Vizille, Août 2023</h4>
+                        <ul>
+                            <li>Entretien du parc et des espaces verts.</li>
+                            <li>Entretien des clôtures et nourrissage des cervidés.</li>
+                            <li>Transport et installation d'équipements.</li>
+                        </ul>  
+                    </div>
+                    <div class="experience-item">
+                        <h3>Contractuel / Chantiers Jeunes</h3>
+                        <h4>Maison des Associations de Vif, Juillet 2022</h4>
+                        <ul>
+                            <li>Mise en place d'une zone de chantier.</li>
+                            <li>Réalisation de travaux de peinture (portes, murs et fenêtres).</li>
+                        </ul>
+                    </div>
+                    <div class="experience-item">
+                        <h3>Stagiaire / Cuisine</h3>
+                        <h4>"Trois Étoiles Solidaires" de la Banque Alimentaire de l'Isère, Février 2019</h4>
+                        <ul>
+                            <li>Réception et tri des aliments.</li>
+                            <li>Préparation des repas en cuisine puis conditionnement pour la distribution.</li>
+                            <li>Entretien ménager des locaux.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+        <!-- Education Section -->
+        <section id="education">
+            <div class="container">
+                <h2>Mon <span>Éducation</span></h2>
+                <div class="education-content">
+                    <div class="education-item">
+                        <h3>BUT Informatique</h3>
+                        <h4>Université Grenoble-Alpes IUT 2, France</h4>
+                        <p>Septembre 2023 - ...</p>
+                        <p>Première Année en cours.</p>
+                    </div>
+                    <div class="education-item">
+                        <h3>Baccalauréat Technologique STI2D</h3>
+                        <h4>Lycée Portes de l'Oisans Vizille, France</h4>
+                        <p>Septembre 2019 - Juillet 2023</p>
+                        <p>Mention "Bien".</p>
+                    </div>
+                    <div class="education-item">
+                        <h3>Diplôme du Brevet des Collèges</h3>
+                        <h4>Collège Le Massegu Vif, France</h4>
+                        <p>Septembre 2015 - Juillet 2019</p>
+                        <p>Mention "Bien".</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+        <!-- Hobbies Section -->
+        <section id="hobbies">
+            <div class="container">
+                <h2>Mes <span>Loisirs</span></h2>
+                <p>En dehors du développement, j'aime lire, jouer aux jeux-vidéos et explorer de nouvelles technologies. Je suis également passionné par les jeux de rôle et incarne des divers personnages durant mes sessions pendant mon temps libre.</p>
+            </div>
+        </section>
+    
+        <!-- Modal for Skill Details -->
+        <div id="skill-modal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <div id="modal-body">
+                    <!-- Dynamic Content Goes Here -->
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <footer>
+        <div id="main-container">
+            <ul class="social-container">
+                <li class="item">
+                    <a href="https://www.linkedin.com/in/clément-barnouin-7ab4702a2/" target="_blank"
+                        title="Linkedin">
+                        <span class="fab fa-linkedin"></span>
+                        <span class="bg link-bg"></span>
+                        <span>Linkedin</span>
+                    </a>
+                </li>
+                <li class="item">
+                    <a href="https://github.com/1Luckyle" target="_blank"
+                        title="Github">
+                        <span class="fab fa-github"></span>
+                        <span class="bg github-bg"></span>
+                        <span>Github</span>
+                    </a>
+                </li>
+                <li class="item">
+                    <a href="https://www.gricad-gitlab.univ-grenoble-alpes.fr/barnouic1" target="_blank"
+                        title="GitLab">
+                        <span class="fab fa-gitlab"></span>
+                        <span class="bg gitlab-bg"></span>
+                        <span>GitLab</span>
+                    </a>
+                </li>
+        </div>
+        <div>
+            <span>Copyright © 2024. Tout droits réservés.</span>
+            <span>Réalisé par Barnouin Clément.</span>
+        </div>
+    </footer>
+
+    <script>
+        // Get the modal
+        var modal = document.getElementById("skill-modal");
+        
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+        
+        // When the user clicks on a skill card, open the modal and show the details
+        document.querySelectorAll('.skill-card').forEach(card => {
+            card.onclick = function() {
+                var skill = this.getAttribute('data-skill');
+                var modalBody = document.getElementById('modal-body');
+                modalBody.innerHTML = ''; // Clear previous content
+                
+                if (skill === 'frontend') {
+                    modalBody.innerHTML = `
+                        <h3>Frontend Compétences</h3>
+                        <p>HTML, CSS, JavaScript</p>
+                        <ul>
+                            <li><strong>HTML :</strong> Création de pages web structurées.</li>
+                            <li><strong>CSS :</strong> Stylisation et mise en page des sites web.</li>
+                            <li><strong>JavaScript :</strong> Interactivité et fonctionnalités dynamiques.</li>
+                        </ul>
+                    `;
+                } else if (skill === 'backend') {
+                    modalBody.innerHTML = `
+                        <h3>Backend Compétences</h3>
+                        <p>Java, PostgreSQL</p>
+                        <ul>
+                            <li><strong>Java :</strong> Développement de logiciels robustes et sécurisés.</li>
+                            <li><strong>PostgreSQL :</strong> Système de gestion de base de données relationnelle.</li>
+                        </ul>
+                    `;
+                } else if (skill === 'tools') {
+                    modalBody.innerHTML = `
+                        <h3>Outils & Technologies</h3>
+                        <p>Git & GitHub, GitLab, JavaFx, Visual Studio Code, IntelliJ IDEA, Terminal, WireShark, R Studio, Exodus - Assembleur 68000, Suite Office 365, UML</p>
+                        <ul>
+                            <li><strong>Git & GitHub :</strong> Gestion de version et collaboration sur le code.</li>
+                            <li><strong>GitLab :</strong> Plateforme DevOps pour gérer le cycle de vie des applications.</li>
+                            <li><strong>JavaFx :</strong> Framework pour créer des applications Java riches.</li>
+                            <li><strong>Visual Studio Code :</strong> Editeur de code source.</li>
+                            <li><strong>IntelliJ IDEA :</strong> Environnement de développement intégré pour Java.</li>
+                            <li><strong>Terminal :</strong> Interface en ligne de commande.</li>
+                            <li><strong>WireShark :</strong> Analyseur de protocoles réseau.</li>
+                            <li><strong>R Studio :</strong> Environnement de développement pour R.</li>
+                            <li><strong>Exodus - Assembleur 68000 :</strong> Outil pour l'assemblage de code machine.</li>
+                            <li><strong>Suite Office 365 :</strong> Suite de productivité bureautique.</li>
+                            <li><strong>UML :</strong> Langage de modélisation unifié pour la conception logicielle.</li>
+                        </ul>
+                    `;
+                }
+                
+                modal.style.display = "block";
+            }
+        });
+        
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function() {
+            modal.style.display = "none";
+        }
+        
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+            if (event.target === modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
+    
+</body>
+</html>
