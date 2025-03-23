@@ -20,7 +20,6 @@
                 <li><a href="index.html">Accueil</a></li>
                 <li><a class="actif" href="about.html">A propos</a></li>
                 <li><a href="projects.html">Portfolio</a></li>
-                <li><a href="contact.html">Contact</a></li>
                 <label for="check" class="close-menu"><i class="fas fa-times"></i></label>
             </span>
             <label for="check" class="open-menu"><i class="fas fa-bars"></i></label>
@@ -38,7 +37,12 @@
         <section id="about-intro">
             <div class="container">
                 <h2>À propos de <span>Moi</span></h2>
-                <p>Je suis Clément Barnouin, un étudiant en informatique, de 19ans, passionné par la création de solutions innovantes et efficaces. En première année d'étude, je me spécialise dans les technologies frontend et backend, toujours à la recherche de nouveaux défis et opportunités pour apprendre et grandir professionnellement.</p>
+                <p>
+                    Je suis Clément Barnouin, un étudiant en informatique, de 20 ans, 
+                    passionné par la création de solutions innovantes et efficaces. 
+                    En deuxième année d'étude, je me spécialise dans l'administration systèmes et réseaux, 
+                    toujours à la recherche de nouveaux défis et opportunités pour apprendre et grandir professionnellement.
+                </p>
             </div>
         </section>
     
@@ -47,21 +51,33 @@
             <div class="container">
                 <h2>Mes <span>Compétences</span></h2>
                 <div class="skills-content">
+                    <!-- Frontend -->
                     <div class="skill-card" data-skill="frontend">
                         <h3>Frontend</h3>
                         <ul>
                             <li><i class="fa-brands fa-html5"></i> HTML</li>
                             <li><i class="fa-brands fa-css3-alt"></i> CSS</li>
                             <li><i class="fa-brands fa-js"></i> JavaScript</li>
+                            <li><i class="fa-brands fa-react"></i> React</li>
+                            <li><i class="fa-solid fa-feather"></i> Tailwind CSS</li>
                         </ul>
                     </div>
+
+                    <!-- Backend -->
                     <div class="skill-card" data-skill="backend">
                         <h3>Backend</h3>
                         <ul>
                             <li><i class="fa-brands fa-java"></i> Java</li>
                             <li><i class="fa-solid fa-database"></i> PostgreSQL</li>
+                            <li><i class="fa-brands fa-node-js"></i> Node.js</li>
+                            <li><i class="fa-brands fa-python"></i> Python</li>
+                            <li><i class="fa-brands fa-php"></i> PHP</li>
+                            <li><i class="fa-solid fa-c"></i> C</li>
+                            <li><i class="fa-solid fa-c"></i> C++</li>
                         </ul>
                     </div>
+
+                    <!-- Tools & Technologies -->
                     <div class="skill-card" data-skill="tools">
                         <h3>Outils & Technologies</h3>
                         <ul>
@@ -69,12 +85,15 @@
                             <li><i class="fa-brands fa-gitlab"></i> GitLab</li>
                             <li><i class="fa-brands fa-java"></i> JavaFx</li>
                             <li><i class="fa-solid fa-code"></i> Visual Studio Code</li>
-                            <li><i class="fa-regular fa-file-code"></i></i> Intellij IDEA</li>
-                            <li><i class="fa-solid fa-terminal"></i> Terminal</li>
+                            <li><i class="fa-regular fa-file-code"></i> IntelliJ IDEA</li>
+                            <li><i class="fa-solid fa-terminal"></i> Terminal Shell</li>
                             <li><i class="fa-solid fa-network-wired"></i> WireShark</li>
-                            <li><i class="fa-solid fa-r"></i> R Studio</li>
+                            <li><i class="fa-brands fa-r-project"></i> R Studio</li>
+                            <li><i class="fa-solid fa-y"></i> Cypress</li>
+                            <li><i class="fa-solid fa-cogs"></i> Docker</li>
+                            <li><i class="fa-solid fa-cogs"></i> Proxmox</li>
                             <li><i class="fa-solid fa-cogs"></i> Exodus - Assembleur 68000</li>
-                            <li><i class="fa-solid fa-file-word"></i>Suite Office 365</li>
+                            <li><i class="fa-solid fa-file-word"></i> Suite Office 365</li>
                             <li><i class="fa-solid fa-book"></i> UML</li>
                         </ul>
                     </div>
@@ -88,11 +107,28 @@
                 <h2>Mon <span>Expérience</span></h2>
                 <div class="experience-content">
                     <div class="experience-item">
+                        <h3>Stagiaire en développement / Stage</h3>
+                        <h4>MathDoc, unité d’appui et de recherche, Avril 2025 à Juin 2025</h4>
+                        <ul>
+                            <li>Déploiement automatiques des tests CI/CD Gitlab;</li>
+                            <li>Création de tests fonctionnels couche OJS sur Cypress;</li>
+                            <li>Mise en place containers OJS, Shell, Django sous Docker;</li>
+                        </ul>  
+                    </div>
+                    <div class="experience-item">
+                        <h3>Contractuel / Emploi d’Été</h3>
+                        <h4>Mairie de Vif, Août 2023</h4>
+                        <ul>
+                            <li>Entretien des espaces verts, des parcs et des bâtiments communaux;</li>
+                            <li>Entretien de la voirie.</li>
+                        </ul>  
+                    </div>
+                    <div class="experience-item">
                         <h3>Contractuel / Emploi d'Été</h3>
                         <h4>Département de l'Isère, Château de Vizille, Août 2023</h4>
                         <ul>
-                            <li>Entretien du parc et des espaces verts.</li>
-                            <li>Entretien des clôtures et nourrissage des cervidés.</li>
+                            <li>Entretien du parc et des espaces verts;</li>
+                            <li>Entretien des clôtures et nourrissage des cervidés;</li>
                             <li>Transport et installation d'équipements.</li>
                         </ul>  
                     </div>
@@ -100,17 +136,8 @@
                         <h3>Contractuel / Chantiers Jeunes</h3>
                         <h4>Maison des Associations de Vif, Juillet 2022</h4>
                         <ul>
-                            <li>Mise en place d'une zone de chantier.</li>
+                            <li>Mise en place d'une zone de chantier;</li>
                             <li>Réalisation de travaux de peinture (portes, murs et fenêtres).</li>
-                        </ul>
-                    </div>
-                    <div class="experience-item">
-                        <h3>Stagiaire / Cuisine</h3>
-                        <h4>"Trois Étoiles Solidaires" de la Banque Alimentaire de l'Isère, Février 2019</h4>
-                        <ul>
-                            <li>Réception et tri des aliments.</li>
-                            <li>Préparation des repas en cuisine puis conditionnement pour la distribution.</li>
-                            <li>Entretien ménager des locaux.</li>
                         </ul>
                     </div>
                 </div>
@@ -126,7 +153,7 @@
                         <h3>BUT Informatique</h3>
                         <h4>Université Grenoble-Alpes IUT 2, France</h4>
                         <p>Septembre 2023 - ...</p>
-                        <p>Première Année en cours.</p>
+                        <p>Deuxième Année en cours.</p>
                     </div>
                     <div class="education-item">
                         <h3>Baccalauréat Technologique STI2D</h3>
@@ -192,19 +219,19 @@
                 </li>
         </div>
         <div>
-            <span>Copyright © 2024. Tout droits réservés.</span>
+            <span>Copyright © 2025. Tout droits réservés.</span>
             <span>Réalisé par Barnouin Clément.</span>
         </div>
     </footer>
 
+    <!-- Script pour la gestion du modal en fonction de la skill-card cliquée -->
     <script>
-        // Get the modal
+        // Référence de la modal
         var modal = document.getElementById("skill-modal");
-        
-        // Get the <span> element that closes the modal
+        // Bouton de fermeture (X)
         var span = document.getElementsByClassName("close")[0];
-        
-        // When the user clicks on a skill card, open the modal and show the details
+
+        // Pour chaque skill-card, on ouvre la modal avec un contenu différent
         document.querySelectorAll('.skill-card').forEach(card => {
             card.onclick = function() {
                 var skill = this.getAttribute('data-skill');
@@ -214,57 +241,74 @@
                 if (skill === 'frontend') {
                     modalBody.innerHTML = `
                         <h3>Frontend Compétences</h3>
-                        <p>HTML, CSS, JavaScript</p>
+                        <p>HTML, CSS, JavaScript, React, Tailwind CSS</p>
                         <ul>
-                            <li><strong>HTML :</strong> Création de pages web structurées.</li>
-                            <li><strong>CSS :</strong> Stylisation et mise en page des sites web.</li>
-                            <li><strong>JavaScript :</strong> Interactivité et fonctionnalités dynamiques.</li>
+                            <li><strong>HTML :</strong> Construction de pages web structurées et sémantiques.</li>
+                            <li><strong>CSS :</strong> Mise en page, animations et responsive design.</li>
+                            <li><strong>JavaScript :</strong> Interactivité et logique côté client.</li>
+                            <li><strong>React :</strong> Framework pour développer des interfaces dynamiques.</li>
+                            <li><strong>Tailwind CSS :</strong> Framework utilitaire pour un design rapide et cohérent.</li>
                         </ul>
                     `;
-                } else if (skill === 'backend') {
+                } 
+                else if (skill === 'backend') {
                     modalBody.innerHTML = `
                         <h3>Backend Compétences</h3>
-                        <p>Java, PostgreSQL</p>
+                        <p>Java, PostgreSQL, Node.js, Python, PHP, C, C++</p>
                         <ul>
-                            <li><strong>Java :</strong> Développement de logiciels robustes et sécurisés.</li>
-                            <li><strong>PostgreSQL :</strong> Système de gestion de base de données relationnelle.</li>
+                            <li><strong>Java :</strong> Développement d'applications robustes (web, bureau, mobile).</li>
+                            <li><strong>PostgreSQL :</strong> Base de données relationnelle avancée et performante.</li>
+                            <li><strong>Node.js :</strong> Exécution JavaScript côté serveur pour applications temps réel.</li>
+                            <li><strong>Python :</strong> Scripts et applications variées (web, data, automatisation).</li>
+                            <li><strong>PHP :</strong> Développement de sites et d’APIs web côté serveur.</li>
+                            <li><strong>C :</strong> Langage performant pour bas niveau ou systèmes embarqués.</li>
+                            <li><strong>C++ :</strong> Extension de C pour la programmation objet et la haute performance.</li>
                         </ul>
                     `;
-                } else if (skill === 'tools') {
+                } 
+                else if (skill === 'tools') {
                     modalBody.innerHTML = `
                         <h3>Outils & Technologies</h3>
-                        <p>Git & GitHub, GitLab, JavaFx, Visual Studio Code, IntelliJ IDEA, Terminal, WireShark, R Studio, Exodus - Assembleur 68000, Suite Office 365, UML</p>
+                        <p>
+                          Git & GitHub, GitLab, JavaFx, Visual Studio Code, IntelliJ IDEA, 
+                          Terminal Shell, WireShark, R Studio, Cypress, Docker, Proxmox, 
+                          Exodus - Assembleur 68000, Suite Office 365, UML
+                        </p>
                         <ul>
                             <li><strong>Git & GitHub :</strong> Gestion de version et collaboration sur le code.</li>
-                            <li><strong>GitLab :</strong> Plateforme DevOps pour gérer le cycle de vie des applications.</li>
-                            <li><strong>JavaFx :</strong> Framework pour créer des applications Java riches.</li>
-                            <li><strong>Visual Studio Code :</strong> Editeur de code source.</li>
-                            <li><strong>IntelliJ IDEA :</strong> Environnement de développement intégré pour Java.</li>
-                            <li><strong>Terminal :</strong> Interface en ligne de commande.</li>
-                            <li><strong>WireShark :</strong> Analyseur de protocoles réseau.</li>
+                            <li><strong>GitLab :</strong> Plateforme DevOps (CI/CD, gestion de projets).</li>
+                            <li><strong>JavaFx :</strong> Framework Java pour des interfaces riches.</li>
+                            <li><strong>Visual Studio Code :</strong> Éditeur léger et extensible.</li>
+                            <li><strong>IntelliJ IDEA :</strong> IDE complet pour Java et autres langages.</li>
+                            <li><strong>Terminal Shell :</strong> Scripts et automatisation sous Linux ou macOS.</li>
+                            <li><strong>WireShark :</strong> Analyse de paquets réseau.</li>
                             <li><strong>R Studio :</strong> Environnement de développement pour R.</li>
-                            <li><strong>Exodus - Assembleur 68000 :</strong> Outil pour l'assemblage de code machine.</li>
-                            <li><strong>Suite Office 365 :</strong> Suite de productivité bureautique.</li>
-                            <li><strong>UML :</strong> Langage de modélisation unifié pour la conception logicielle.</li>
+                            <li><strong>Cypress :</strong> Tests end-to-end automatisés pour applications web.</li>
+                            <li><strong>Docker :</strong> Conteneurisation et déploiement d’applications.</li>
+                            <li><strong>Proxmox :</strong> Virtualisation et gestion de conteneurs/VM.</li>
+                            <li><strong>Exodus - Assembleur 68000 :</strong> Programme d’assemblage pour Motorola 68000.</li>
+                            <li><strong>Suite Office 365 :</strong> Productivité et collaboration bureautique.</li>
+                            <li><strong>UML :</strong> Modélisation et conception orientée objet.</li>
                         </ul>
                     `;
                 }
                 
+                // Affichage de la modal
                 modal.style.display = "block";
-            }
+            };
         });
         
-        // When the user clicks on <span> (x), close the modal
+        // Fermeture de la modal au clic sur le X
         span.onclick = function() {
             modal.style.display = "none";
-        }
+        };
         
-        // When the user clicks anywhere outside of the modal, close it
+        // Fermeture de la modal au clic en dehors
         window.onclick = function(event) {
             if (event.target === modal) {
                 modal.style.display = "none";
             }
-        }
+        };
     </script>
     
 </body>
