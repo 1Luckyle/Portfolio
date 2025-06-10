@@ -38,477 +38,135 @@
             <div class="container">
                 <h2>Mes <span>Projets</span></h2>
                 <div class="projects-content">
-
-                    <!-- Algorithme de Tri en Java -->
-                    <div id="projet1" class="project-card" onclick="openModal('modal1')">
-                        <div class="info-badge"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM216 336h24V272H216c-13.3 0-24-10.7-24-24s10.7-24 24-24h48c13.3 0 24 10.7 24 24v88h8c13.3 0 24 10.7 24 24s-10.7 24-24 24H216c-13.3 0-24-10.7-24-24s10.7-24 24-24zm40-208a32 32 0 1 1 0 64 32 32 0 1 1 0-64z"/></svg></div>
-                        <img src="images/alogojava.avif" alt="Algorithme de Tri en Java" title="Algorithme de Tri en Java">
+                    <!-- Projet de Stage -->
+                    <div id="projet10" class="project-card" onclick="openModal('modal0')">
+                        <div class="info-badge">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                <path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM216 336h24V272H216c-13.3 0-24-10.7-24-24s10.7-24 24-24h48c13.3 0 24 10.7 24 24v88h8c13.3 0 24 10.7 24 24s-10.7 24-24 24H216c-13.3 0-24-10.7-24-24s10.7-24 24-24zm40-208a32 32 0 1 1 0 64 32 32 0 1 1 0-64z"/>
+                            </svg>
+                        </div>
+                        <img src="images/stage_mathdoc.jpg" alt="Stage Mathdoc" title="Stage Mathdoc">
                         <div class="project-info">
-                            <h3>Algorithme de Tri en Java</h3>
-                            <p>Développement d'un algorithme de tri efficace en Java pour optimiser les performances de traitement des données.</p>
+                            <h3>Stage Mathdoc – Tests Fonctionnels et Intégration Continue</h3>
+                            <p>Développement et automatisation de tests fonctionnels pour la chaîne de publication scientifique Open Journal Systems (OJS) avec Docker, GitLab CI/CD et Cypress.</p>
                         </div>
                     </div>
-                    <div id="modal1" class="modal">
+                    <div id="modal0" class="modal">
                         <div class="modal-content">
-                            <span class="close" onclick="closeModal('modal1')">&times;</span>
-                            <h3>Algorithme de Tri en Java</h3>
-                            <img src="images/classementdepeche.png" alt="Algorithme de Tri en Java" title="Algorithme de Tri en Java">
-                            <p>Le projet "Classification automatique" a pour objectif de créer un programme de classification automatique de dépêches journalistiques en utilisant des algorithmes de tri en Java. Le programme doit être capable de classer chaque dépêche dans l'une des cinq catégories suivantes : ENVIRONNEMENT-SCIENCES, CULTURE, ÉCONOMIE, POLITIQUE, SPORTS. Le processus inclut la création de lexiques pour chaque catégorie et le calcul de scores pour déterminer la catégorie appropriée pour chaque dépêche.</p>
-                            <h4>Compétences :</h4>
+                            <span class="close" onclick="closeModal('modal0')">&times;</span>
+                            <h3>Stage Mathdoc – Automatisation de tests fonctionnels pour OJS</h3>
+                            <img src="images/stage_mathdoc.jpg" alt="Stage Mathdoc" title="Stage Mathdoc">
+
+                            <p>
+                            Dans le cadre de mon stage de deuxième année de BUT Informatique, j’ai rejoint l’unité Mathdoc (CNRS / Université Grenoble Alpes) afin de fiabiliser la chaîne de publication scientifique <strong>Open Journal Systems</strong> (OJS), utilisée dans le cadre du <em>Centre Mersenne</em>. Ma mission principale consistait à mettre en place une infrastructure de tests fonctionnels automatisés pour valider la mise à jour vers la version 3.4 d’OJS, tout en garantissant la compatibilité des plugins internes.
+                            </p>
+
+                            <h4>Objectifs du projet :</h4>
                             <ul>
-                                <li>Programmation en Java</li>
-                                <li>Création et manipulation de structures de données</li>
-                                <li>Analyse de texte et extraction de mots-clés</li>
-                                <li>Conception d'algorithmes de tri et de classification</li>
-                                <li>Travail collaboratif et gestion de projet</li>
+                                <li>Déployer un environnement de test stable avec Docker (MySQL, PHP, Apache, etc.).</li>
+                                <li>Écrire et exécuter des scénarios de test fonctionnels en <strong>Cypress</strong>.</li>
+                                <li>Assurer l’intégration continue via GitLab CI/CD avec des scripts personnalisés.</li>
+                                <li>Automatiser la validation de comportements critiques (rôles, discussions, publications).</li>
                             </ul>
-                            <h4>Objectifs :</h4>
+
+                            <h4>Principales réalisations :</h4>
                             <ul>
-                                <li>Création des lexiques</li>
-                                <li>Chargement et manipulation des lexiques</li>
-                                <li>Calcul des scores</li>
-                                <li>Automatisation et tests</li>
+                                <li>Développement de tests Cypress robustes pour l’interface éditeur/auteur de OJS.</li>
+                                <li>Migration d’anciens tests PHP vers du JavaScript moderne.</li>
+                                <li>Automatisation complète du cycle de test via des pipelines GitLab CI (runner Docker).</li>
+                                <li>Élaboration de scripts Bash facilitant le déploiement et la réinitialisation de l’environnement.</li>
+                                <li>Rédaction d’une documentation technique et d’un rapport LaTeX pour transmettre les bonnes pratiques.</li>
                             </ul>
-                            <h4>Travail en groupe :</h4>
-                            <p>Le projet a été réalisé en binôme avec une répartition des tâches claires :</p>
+
+                            <h4>Compétences mobilisées :</h4>
                             <ul>
-                                <li>Un membre était responsable de la création manuelle des lexiques et de la rédaction des fichiers nécessaires.</li>
-                                <li>L'autre membre s'occupait du développement des algorithmes et des méthodes pour le chargement et la manipulation des lexiques.</li>
+                                <li>Automatisation de tests (Cypress, Bash)</li>
+                                <li>Conteneurisation et déploiement (Docker)</li>
+                                <li>Intégration continue (GitLab CI/CD)</li>
+                                <li>Programmation en JavaScript et PHP</li>
+                                <li>Rédaction technique et gestion de projet</li>
                             </ul>
-                            <h4>Travail individuel dans le groupe :</h4>
-                            <ul>
-                                <li>Membre A - Tristan Fontanière : Création des fichiers lexiques pour chaque catégorie, vérification et ajustement des mots-clés.</li>
-                                <li>Membre B - Clément Barnouin : Développement des algorithmes de chargement des lexiques, calcul des scores et classification des dépêches, tests et optimisation du programme.</li>
-                            </ul>
-                            <h4>Techniques et savoirs faire acquis :</h4>
-                            <ul>
-                                <li>Programmation en Java</li>
-                                <li>Analyse de texte</li>
-                                <li>Algorithmique</li>
-                                <li>Travail collaboratif</li>
-                                <li>Tests et validation</li>
-                            </ul>
+
                             <h4>Conclusion :</h4>
-                            <p>Ce projet a permis de développer des compétences clés en programmation Java, analyse de texte et conception d'algorithmes. Le programme final offre une solution efficace pour la classification automatique de dépêches journalistiques, avec des résultats satisfaisants en termes de précision et de rapidité. La collaboration en binôme a également renforcé les compétences en gestion de projet et en travail d'équipe.</p>
-                            <div id="main-container">
-                                <ul class="social-container">
-                                    <li class="item">
-                                        <a href="https://github.com/1Luckyle/Algorithme-de-Tri" target="_blank"
-                                            title="Github">
-                                            <span class="fab fa-github"></span>
-                                            <span class="bg github-bg"></span>
-                                            <span>Github</span>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
+                            <p>
+                            Ce stage m’a offert une immersion concrète dans un projet à fort enjeu technique et collectif. J’ai pu consolider mes compétences en tests automatisés, en déploiement Docker, ainsi qu’en intégration continue. Ce travail s’inscrit dans une démarche de qualité logicielle essentielle au bon fonctionnement de la publication scientifique en ligne.
+                            </p>
                         </div>
                     </div>
 
-
-                    <!-- Création d'une Base de Données -->
-                    <div id="projet2" class="project-card" onclick="openModal('modal2')">
-                        <div class="info-badge"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM216 336h24V272H216c-13.3 0-24-10.7-24-24s10.7-24 24-24h48c13.3 0 24 10.7 24 24v88h8c13.3 0 24 10.7 24 24s-10.7 24-24 24H216c-13.3 0-24-10.7-24-24s10.7-24 24-24zm40-208a32 32 0 1 1 0 64 32 32 0 1 1 0-64z"/></svg></div>
-                        <img src="images/creationdatabase.avif" alt="Création d'une Base de Données" title="Création d'une Base de Données">
+                    <!-- Projet 9 : Conception et mise en œuvre d'une infrastructure réseau sécurisée à l'aide d'outils open-source -->
+                    <div id="projet9" class="project-card" onclick="openModal('modal9')">
+                        <div class="info-badge">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                            <path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM216 336h24V272H216c-13.3 0-24-10.7-24-24s10.7-24 
+                            24-24h48c13.3 0 24 10.7 24 24v88h8c13.3 0 24 10.7 24 24s-10.7 24-24 24H216c-13.3 0-24-10.7-24-24s10.7-24 
+                            24-24zm40-208a32 32 0 1 1 0 64 32 32 0 1 1 0-64z"/>
+                        </svg>
+                        </div>
+                        <!-- Image illustrative (à adapter) -->
+                        <img src="images/infrastructurereseau2.jpg" alt="Conception d'une infrastructure réseau sécurisée" 
+                            title="Conception d'une infrastructure réseau sécurisée" />
                         <div class="project-info">
-                            <h3>Création d'une Base de Données</h3>
-                            <p>Conception et implémentation d'une base de données relationnelle pour gérer les informations d'une entreprise.</p>
+                        <h3>Conception et Mise en Œuvre d’une Infrastructure Réseau Sécurisée</h3>
+                        <p>Création d’un réseau virtuel multi-serveurs, avec services DHCP, DNS, annuaire LDAP, 
+                            pare-feu et supervision centralisée.</p>
                         </div>
                     </div>
-                    <div id="modal2" class="modal">
+  
+                    <!-- Modal projet 9 -->
+                    <div id="modal9" class="modal">
                         <div class="modal-content">
-                            <span class="close" onclick="closeModal('modal2')">&times;</span>
-                            <h3>Création d'une Base de Données</h3>
-                            <img src="images/creationdatabase2.avif" alt="Création d'une Base de Données" title="Création d'une Base de Données">
-                            <p>Ce projet consiste en la conception et l'implémentation d'une base de données relationnelle sous PostgreSQL pour modéliser et analyser les données du naufrage du Titanic. Le projet inclut la création du schéma de la base de données, le peuplement de celle-ci à partir de fichiers CSV, ainsi que l'écriture de requêtes pour extraire et analyser les données pertinentes.</p>
-                            <h4>Compétences :</h4>
-                            <ul>
-                                <li>Modélisation de bases de données relationnelles</li>
-                                <li>Utilisation de PostgreSQL pour l'implémentation de bases de données</li>
-                                <li>Écriture de requêtes SQL complexes</li>
-                                <li>Analyse de données à partir de fichiers CSV</li>
-                                <li>Gestion de projets collaboratifs en environnement académique</li>
-                            </ul>
-                            <h4>Objectifs :</h4>
-                            <ul>
-                                <li>Conception de la base de données</li>
-                                <li>Implémentation sous PostgreSQL</li>
-                                <li>Peuplement de la base</li>
-                                <li>Analyse des données</li>
-                            </ul>
-                            <h4>Travail en groupe :</h4>
-                            <p>Le projet a été réalisé en binôme (ou trinôme) avec une répartition claire des tâches :</p>
-                            <ul>
-                                <li>Un membre était responsable de la modélisation du schéma et de la justification des relations.</li>
-                                <li>Un autre membre s'occupait de l'implémentation du schéma et de l'écriture des scripts SQL pour la création et la suppression des tables.</li>
-                                <li>Lss deux membres, si présent, gérait le peuplement de la base et l'écriture des requêtes d'analyse.</li>
-                            </ul>
-                            <h4>Travail individuel dans le groupe :</h4>
-                            <ul>
-                                <li>Membre A - Fontanière Tristan : Modélisation du schéma relationnel, rédaction de la justification des choix de modélisation.</li>
-                                <li>Membre B - Barnouin Clément : Implémentation du schéma sous PostgreSQL, création des scripts `create.sql` et `drop.sql`.</li>
-                                <li>Membre A & B - Fontanière Tristan et Barnouin Clément : Importation des données, écriture des requêtes d'analyse dans le fichier `testinfos.sql`.</li>
-                            </ul>
-                            <h4>Techniques et savoirs faire acquis :</h4>
-                            <ul>
-                                <li>Modélisation des données</li>
-                                <li>PostgreSQL</li>
-                                <li>SQL</li>
-                                <li>Travail en équipe</li>
-                            </ul>
-                            <h4>Conclusion :</h4>
-                            <p>Ce projet nous a permis de développer des compétences essentielles en modélisation et gestion de bases de données, tout en travaillant de manière collaborative. La base de données résultante offre un outil puissant pour l'analyse des facteurs ayant influencé le naufrage du Titanic, illustrant ainsi l'importance d'une bonne conception et d'une implémentation rigoureuse des bases de données dans la gestion et l'analyse des données complexes.</p>
-                            <div id="main-container">
-                                <ul class="social-container">
-                                    <li class="item">
-                                        <a href="https://github.com/1Luckyle/Creation-Base-de-Donnees" target="_blank"
-                                            title="Github">
-                                            <span class="fab fa-github"></span>
-                                            <span class="bg github-bg"></span>
-                                            <span>Github</span>
-                                        </a>
-                                    </li>
-                            </div>
+                        <span class="close" onclick="closeModal('modal9')">&times;</span>
+                        <h3>Conception et Mise en Œuvre d’une Infrastructure Réseau Sécurisée</h3>
+                        <img src="images/infrastructurereseau2.jpg" alt="Infrastructure réseau sécurisée" 
+                            title="Infrastructure réseau sécurisée" />
+                        <p>
+                            Cette SAE (S4.Deploi.01) a pour objectif de <strong>concevoir et déployer une architecture réseau</strong> 
+                            complète et sécurisée à l’aide d’outils open-source, sur des machines virtuelles et des réseaux virtuels.
+                            Le projet couvre l’installation de serveurs DHCP, DNS, d’un pare-feu, d’un serveur de fichiers, ainsi que 
+                            la supervision et la journalisation.
+                        </p>
+                        <h4>Objectifs :</h4>
+                        <ul>
+                            <li>Mettre en place un ou plusieurs réseaux virtuels (VM Debian ou Windows) sur Qemu/KVM ou Proxmox.</li>
+                            <li>Installer et configurer des services (DHCP, DNS, Apache/Nginx, Wiki, etc.).</li>
+                            <li>Sécuriser l’infrastructure avec un pare-feu (nftables) et un routage approprié.</li>
+                            <li>Superviser l’ensemble via un outil de monitoring (Icinga, Nagios...), 
+                                assurer la journalisation et la haute disponibilité.</li>
+                        </ul>
+                        <h4>Niveaux d’infrastructure :</h4>
+                        <ul>
+                            <li><strong>Minimale :</strong> Un unique réseau, DHCP, DNS unique, serveurs Web/DB, etc.</li>
+                            <li><strong>Améliorée :</strong> Plusieurs réseaux segmentés, pare-feu, DHCP multiples, DMZ, etc.</li>
+                            <li><strong>Avancée :</strong> Plusieurs routeurs, DNS over TLS/HTTPS, supervision avancée (Zabbix, SIEM), 
+                                annuaire LDAP, etc.</li>
+                        </ul>
+                        <h4>Compétences :</h4>
+                        <ul>
+                            <li>Administration système et réseau sous Linux (Debian 12, scripts Bash).</li>
+                            <li>Gestion de pare-feu, routage, VLAN, DMZ, etc.</li>
+                            <li>Virtualisation (Qemu/KVM, Proxmox) et conteneurisation (Docker).</li>
+                            <li>Configuration de services critiques (DHCP Kea, DNS Bind9, MariaDB, Wiki mdBook...).</li>
+                            <li>Tests d’intrusion basiques, automatisation d’installation, scripts de test et de supervision.</li>
+                        </ul>
+                        <h4>Livrables :</h4>
+                        <ul>
+                            <li><strong>Document de conception :</strong> Architecture, plan d’adressage, choix des logiciels.</li>
+                            <li><strong>Prototype :</strong> Première version fonctionnelle avec captures d’écran.</li>
+                            <li><strong>Scripts de test :</strong> Vérifications de connectivité, disponibilités des services, 
+                                sécurité (pare-feu).</li>
+                            <li><strong>Automatisation :</strong> Scripts d’installation et de configuration.</li>
+                            <li><strong>Rapport final et Wiki :</strong> Documentation technique complète, aspects sécurité, 
+                                retours d’expérience.</li>
+                        </ul>
+                        <h4>Conclusion :</h4>
+                        <p>
+                            Ce projet a permis de combiner des compétences en administration réseau, sécurité, virtualisation et 
+                            automatisation. Le résultat est une infrastructure robuste, segmentée et surveillée en temps réel, 
+                            répondant aux besoins d’une entreprise en quête de fiabilité et de protection contre les cybermenaces.
+                        </p>
                         </div>
                     </div>
-
-
-                    <!-- Exploitation d'une Base de Données -->
-                    <div id="projet3" class="project-card" onclick="openModal('modal3')">
-                        <div class="info-badge"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM216 336h24V272H216c-13.3 0-24-10.7-24-24s10.7-24 24-24h48c13.3 0 24 10.7 24 24v88h8c13.3 0 24 10.7 24 24s-10.7 24-24 24H216c-13.3 0-24-10.7-24-24s10.7-24 24-24zm40-208a32 32 0 1 1 0 64 32 32 0 1 1 0-64z"/></svg></div>
-                        <img src="images/exploitationdatabase.webp" alt="Exploitation d'un Base de Données" title="Exploitation d'un Base de Données">
-                        <div class="project-info">
-                            <h3>Exploitation d'une Base de Données</h3>
-                            <p>Utilisation de SQL pour extraire, analyser et visualiser des données à partir d'une base de données existante.</p>
-                        </div>
-                    </div>
-                    <div id="modal3" class="modal">
-                        <div class="modal-content">
-                            <span class="close" onclick="closeModal('modal3')">&times;</span>
-                            <h3>Exploitation d'une Base de Données</h3>
-                            <img src="images/exploitationdatabase2.avif" alt="Exploitation d'un Base de Données" title="Exploitation d'un Base de Données">
-                            <p>Ce projet se concentre sur l'exploitation de la base de données Open Food Facts pour analyser la relation entre le Nutri-Score (ABCDE) et les variables nutritionnelles pour les produits de la famille 'en:cereals' aux États-Unis. L'objectif principal est de nettoyer et d'explorer les données, d'en extraire celles pertinentes et de les analyser pour tirer des conclusions sur la qualité nutritionnelle des produits.</p>
-                            <h4>Compétences :</h4>
-                            <ul>
-                                <li>Manipulation et extraction de données avec SQL</li>
-                                <li>Utilisation de PostgreSQL pour l'analyse de grandes bases de données</li>
-                                <li>Techniques de nettoyage de données</li>
-                                <li>Visualisation de données pour l'analyse statistique</li>
-                                <li>Compréhension et interprétation des scores nutritionnels</li>
-                            </ul>
-                            <h4>Objectifs :</h4>
-                            <ul>
-                                <li>Exploration des données</li>
-                                <li>Nettoyage des données</li>
-                                <li>Analyse des données</li>
-                                <li>Visualisation des résultats</li>
-                            </ul>
-                            <h4>Travail en groupe :</h4>
-                            <p>Le projet a été réalisé en binôme avec une répartition des tâches comme suit :</p>
-                            <ul>
-                                <li>Un membre était initialement responsable de l'extraction et du nettoyage initial des données.</li>
-                                <li>L'autre membre s'occupait de l'analyse approfondie et de la visualisation des résultats.</li>
-                            </ul>
-                            <h4>Travail individuel dans le groupe :</h4>
-                            <ul>
-                                <li>Membre A - Bils Brayan : Rédaction du dossier de Gestion de Projet.</li>
-                                <li>Membre B - Barnouin Clément : Extraction des données depuis la base PostgreSQL, création des tables temporaires, nettoyage des données, analyse des données nettoyées, création des requêtes SQL pour l'exploration et la visualisation des résultats, préparation des graphiques.</li>
-                            </ul>
-                            <h4>Techniques et savoirs faire acquis :</h4>
-                            <ul>
-                                <li>SQL avancé</li>
-                                <li>PostgreSQL</li>
-                                <li>Nettoyage de données</li>
-                                <li>Visualisation des données</li>
-                                <li>Analyse nutritionnelle</li>
-                            </ul>
-                            <h4>Conclusion :</h4>
-                            <p>Ce projet a permis de développer des compétences clés en extraction, nettoyage et analyse de données, tout en renforçant la capacité à travailler en équipe sur des projets techniques. L'analyse des données a révélé des tendances significatives entre le Nutri-Score et les variables nutritionnelles des céréales aux États-Unis, soulignant l'importance de choisir des produits avec des scores nutritionnels plus favorables pour une alimentation plus saine.</p>
-                            <div id="main-container">
-                                <ul class="social-container">
-                                    <li class="item">
-                                        <a href="https://github.com/1Luckyle/Exploitation-Base-de-Donnees" target="_blank"
-                                            title="Github">
-                                            <span class="fab fa-github"></span>
-                                            <span class="bg github-bg"></span>
-                                            <span>Github</span>
-                                        </a>
-                                    </li>
-                            </div>
-                        </div>
-                    </div>
-
-
-                    <!-- Installation d'un Poste pour le Développement -->                    
-                    <div id="projet4" class="project-card" onclick="openModal('modal4')">
-                        <div class="info-badge"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM216 336h24V272H216c-13.3 0-24-10.7-24-24s10.7-24 24-24h48c13.3 0 24 10.7 24 24v88h8c13.3 0 24 10.7 24 24s-10.7 24-24 24H216c-13.3 0-24-10.7-24-24s10.7-24 24-24zm40-208a32 32 0 1 1 0 64 32 32 0 1 1 0-64z"/></svg></div>
-                        <img src="images/installationposte.avif" alt="Installation d'un Poste pour le Développement" title="Installation d'un Poste pour le Développement">
-                        <div class="project-info">
-                            <h3>Installation d'un Poste pour le Développement</h3>
-                            <p>Mise en place d'un environnement de développement complet avec les outils nécessaires pour le développement logiciel.</p>
-                        </div>
-                    </div>
-                    <div id="modal4" class="modal">
-                        <div class="modal-content">
-                            <span class="close" onclick="closeModal('modal4')">&times;</span>
-                            <h3>Installation d'un Poste pour le Développement</h3>
-                            <img src="images/installationposte2.avif" alt="Installation d'un Poste pour le Développement" title="Installation d'un Poste pour le Développement">
-                            <p>Ce projet consiste en l'installation complète d'un poste de travail sous Debian 11.8 avec l'environnement de bureau KDE/Plasma, incluant la mise en place d'un système de gestion de paquets et l'installation d'outils de développement tels que JDK et Netbeans. L'objectif principal est de préparer un environnement de développement robuste et sécurisé pour les développeurs.</p>
-                            <h4>Compétences :</h4>
-                            <ul>
-                                <li>Rédaction d'une carte mentale d'installation</li>
-                                <li>Installation et configuration de systèmes d'exploitation Linux</li>
-                                <li>Utilisation de gestionnaires de paquets (apt, snap, flatpak)</li>
-                                <li>Configuration d'environnements de bureau (KDE/Plasma)</li>
-                                <li>Installation d'outils de développement (JDK, Git, Netbeans)</li>
-                                <li>Gestion et sécurisation des utilisateurs sous Linux</li>
-                            </ul>
-                            <h4>Objectifs :</h4>
-                            <ul>
-                                <li>Préparation de l'installation</li>
-                                <li>Installation du système Debian</li>
-                                <li>Compléter le système Debian</li>
-                                <li>Installation des outils de développement</li>
-                            </ul>
-                            <h4>Travail en groupe :</h4>
-                            <p>Le projet a été réalisé individuellement mais en se basant sur des discussions de groupe pour partager les meilleures pratiques et résoudre les problèmes rencontrés.</p>
-                            <h4>Travail individuel :</h4>
-                            <ul>
-                                <li>Création d'une carte mentale :</li>
-                                <img src="images/SAE 1.03 - Carte Mentale - Barnouin Clément-Map 1.png" alt="Carte Mentale d'Installation de Poste de Travail" title="Carte Mentale">
-                                <li>Préparation de l'installation : Téléchargement et vérification des fichiers ISO de Debian.</li>
-                                <li>Installation du système Debian : Exécution des commandes d'installation, configuration des paramètres système.</li>
-                                <li>Configuration de l'environnement de bureau : Réglage de la résolution, ajout de widgets, configuration de sudo.</li>
-                                <li>Installation et configuration des outils de développement : Installation de JDK, Git, et Netbeans en utilisant différents gestionnaires de paquets.</li>
-                            </ul>
-                            <h4>Techniques et savoirs faire acquis :</h4>
-                            <ul>
-                                <li>Installation de systèmes d'exploitation</li>
-                                <li>Gestion des paquets</li>
-                                <li>Configuration utilisateur</li>
-                                <li>Installation d'outils de développement</li>
-                                <li>Vérifications d'intégrité avec sha512sum</li>
-                            </ul>
-                            <h4>Conclusion :</h4>
-                            <p>Ce projet a permis de développer des compétences essentielles pour la mise en place d'un environnement de développement Linux complet et fonctionnel. La maîtrise de l'installation et de la configuration de Debian, ainsi que l'utilisation des différents gestionnaires de paquets, sont des compétences précieuses pour tout développeur travaillant sous Linux.</p>
-                            <div id="main-container">
-                                <ul class="social-container">
-                                    <li class="item">
-                                        <a href="https://github.com/1Luckyle/Installation-Poste-de-Travail" target="_blank"
-                                            title="Github">
-                                            <span class="fab fa-github"></span>
-                                            <span class="bg github-bg"></span>
-                                            <span>Github</span>
-                                        </a>
-                                    </li>
-                            </div>
-                        </div>
-                    </div>
-
-
-                    <!-- Installation de Services Réseau -->
-                    <div id="projet5" class="project-card" onclick="openModal('modal5')">
-                        <div class="info-badge"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM216 336h24V272H216c-13.3 0-24-10.7-24-24s10.7-24 24-24h48c13.3 0 24 10.7 24 24v88h8c13.3 0 24 10.7 24 24s-10.7 24-24 24H216c-13.3 0-24-10.7-24-24s10.7-24 24-24zm40-208a32 32 0 1 1 0 64 32 32 0 1 1 0-64z"/></svg></div>
-                        <img src="images/installationreseau.avif" alt="Installation de Services Réseau" title="Installation de Services Réseau">
-                        <div class="project-info">
-                            <h3>Installation de Services Réseau</h3>
-                            <p>Configuration et déploiement de services réseau pour assurer la connectivité et la communication entre les systèmes.</p>
-                        </div>
-                    </div>
-                    <div id="modal5" class="modal">
-                        <div class="modal-content">
-                            <span class="close" onclick="closeModal('modal5')">&times;</span>
-                            <h3>Installation de Services Réseau</h3>
-                            <img src="images/installationguide.avif" alt="Installation de Services Réseau" title="Installation de Services Réseau">
-                            <p>Ce projet consiste en l'installation et la configuration d'un serveur Debian 12 sur une machine virtuelle, incluant l'installation des services Apache, PostgreSQL, et PHP. Le but est de mettre en place un environnement serveur fonctionnel qui peut être interrogé depuis la machine hôte, avec une attention particulière à la sécurité et à la gestion des services.</p>
-                            <h4>Compétences :</h4>
-                            <ul>
-                                <li>Installation et configuration de serveurs sous Debian</li>
-                                <li>Gestion des services réseau (Apache, PostgreSQL, PHP)</li>
-                                <li>Sécurisation des services et des accès réseau</li>
-                                <li>Utilisation de machines virtuelles avec Qemu/KVM</li>
-                                <li>Rédaction de guides techniques en anglais</li>
-                            </ul>
-                            <h4>Objectifs :</h4>
-                            <ul>
-                                <li>Préparation et installation de Debian</li>
-                                <li>Installation des services réseau</li>
-                                <li>Configuration de l'accès réseau</li>
-                                <li>Sécurisation</li>
-                            </ul>
-                            <h4>Travail en groupe :</h4>
-                            <p>Le projet a été réalisé de manière individuelle, mais des échanges réguliers avec d'autres étudiants ont permis de partager des bonnes pratiques et de résoudre des problèmes communs.</p>
-                            <h4>Travail individuel :</h4>
-                            <ul>
-                                <li>Préparation de l'installation : Téléchargement de l'image ISO de Debian, vérification de son intégrité.</li>
-                                <li>Création et configuration de la machine virtuelle : Paramétrage de Qemu/KVM, installation de Debian sans interface graphique.</li>
-                                <li>Installation des services réseau : Utilisation d'APT pour installer Apache, PostgreSQL, et PHP, configuration des fichiers de service.</li>
-                                <li>Configuration de l'accès réseau : Mise en place de la redirection de ports, test des services depuis la machine hôte.</li>
-                                <li>Sécurisation des services : Gestion des accès par clé SSH, mise en place de HTTPS avec un certificat auto-signé.</li>
-                            </ul>
-                            <h4>Techniques et savoirs faire acquis :</h4>
-                            <ul>
-                                <li>Installation de systèmes et services</li>
-                                <li>Configuration des services</li>
-                                <li>Gestion des accès réseau</li>
-                                <li>Rédaction technique</li>
-                            </ul>
-                            <h4>Conclusion :</h4>
-                            <p>Ce projet a permis de développer des compétences essentielles en installation et configuration de serveurs, gestion des services réseau, et sécurisation des accès. La rédaction d'un guide technique détaillé a également renforcé la capacité à communiquer de manière claire et structurée sur des sujets techniques. Le serveur installé et configuré est maintenant prêt à être utilisé pour des applications de développement et de test, avec une sécurité renforcée.</p>
-                            <div id="main-container">
-                                <ul class="social-container">
-                                    <li class="item">
-                                        <a href="https://github.com/1Luckyle/Installation-Services-Reseaux" target="_blank"
-                                            title="Github">
-                                            <span class="fab fa-github"></span>
-                                            <span class="bg github-bg"></span>
-                                            <span>Github</span>
-                                        </a>
-                                    </li>
-                            </div>
-                        </div>
-                    </div>
-
-
-                    <!-- Développement d'un Site Web d'Entreprise -->
-                    <div id="projet6" class="project-card" onclick="openModal('modal6')">
-                        <div class="info-badge"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM216 336h24V272H216c-13.3 0-24-10.7-24-24s10.7-24 24-24h48c13.3 0 24 10.7 24 24v88h8c13.3 0 24 10.7 24 24s-10.7 24-24 24H216c-13.3 0-24-10.7-24-24s10.7-24 24-24zm40-208a32 32 0 1 1 0 64 32 32 0 1 1 0-64z"/></svg></div>
-                        <img src="images/creationsiteweb.webp" alt="Développement d'un Site Web d'Entreprise" title="Développement d'un Site Web d'Entreprise">
-                        <div class="project-info">
-                            <h3>Développement d'un Site Web d'Entreprise</h3>
-                            <p>Création d'un site web professionnel pour améliorer la présence en ligne et l'accessibilité de l'entreprise.</p>
-                        </div>
-                    </div>
-                    <div id="modal6" class="modal">
-                        <div class="modal-content">
-                            <span class="close" onclick="closeModal('modal6')">&times;</span>
-                            <h3>Développement d'un Site Web d'Entreprise</h3>
-                            <img src="images/SCCFrance.png" alt="Développement d'un Site Web d'Entreprise" title="Développement d'un Site Web d'Entreprise">
-                            <p>Ce projet a pour objectif de créer un site web institutionnel pour une entreprise du secteur numérique, destiné principalement à la génération Alpha, c'est-à-dire aux jeunes de 3ème en recherche de stage. Le site doit être pratique, sobre écologiquement et visuellement, et doit présenter l'entreprise de manière vulgarisée pour être compréhensible par un public non technique.</p>
-                            <h4>Compétences :</h4>
-                            <ul>
-                                <li>Conception et développement web</li>
-                                <li>Utilisation de CMS et d'outils de maquette (Whimsical)</li>
-                                <li>Compréhension des besoins utilisateurs</li>
-                                <li>Communication et présentation de l'information de manière simplifiée</li>
-                                <li>Collaboration en équipe et gestion de projet</li>
-                            </ul>
-                            <h4>Objectifs :</h4>
-                            <ul>
-                                <li>Recueil des besoins</li>
-                                <li>Conception de la maquette</li>
-                                <li>Développement du site web</li>
-                                <li>Vulgarisation des informations</li>
-                            </ul>
-                            <h4>Travail en groupe :</h4>
-                            <p>Le projet a été réalisé en groupe de trois personnes :</p>
-                            <ul>
-                                <li>Membre A & C - Fontanière Tristan et Barnouin Clément : Responsable de la recherche d'informations et de la rédaction de la fiche de présentation de l'entreprise.</li>
-                                <li>Membre B - Mitov Tsveteline : Responsable de la conception de la maquette du site web en utilisant Whimsical.</li>
-                                <li>Membre A & C - Fontanière Tristan et Barnouin Clément : Responsable du développement et de l'implémentation du site web.</li>
-                            </ul>
-                            <h4>Travail individuel dans le groupe :</h4>
-                            <ul>
-                                <li>Membre A - Fontanière Tristan : Recherche des informations sur l'entreprise, rédaction de la fiche de présentation.</li>
-                                <li>Membre B - Mitov Tsveteline : Conception de la maquette du site web, prise en compte des retours pour ajuster la maquette.</li>
-                                <li>Membre C - Barnouin Clément : Développement du site web, intégration des contenus, mise en place des fonctionnalités interactives.</li>
-                            </ul>
-                            <h4>Techniques et savoirs faire acquis :</h4>
-                            <ul>
-                                <li>Conception web</li>
-                                <li>Développement web</li>
-                                <li>Gestion de projet</li>
-                                <li>Vulgarisation de contenu</li>
-                            </ul>
-                            <h4>Conclusion :</h4>
-                            <p>Ce projet a permis de développer des compétences essentielles en conception et développement web, tout en renforçant la capacité à travailler en équipe et à vulgariser des informations techniques. Le site web résultant offre une présentation claire et attrayante de l'entreprise, adaptée aux jeunes de 3ème en recherche de stage.</p>
-                            <div id="main-container">
-                                <ul class="social-container">
-                                    <li class="item">
-                                        <a href="https://github.com/1Luckyle/Site-d-Entreprise-SCC-France" target="_blank"
-                                            title="Github">
-                                            <span class="fab fa-github"></span>
-                                            <span class="bg github-bg"></span>
-                                            <span>Github</span>
-                                        </a>
-                                    </li>
-                            </div>
-                        </div>
-                    </div>
-
-                    
-                    <!-- Création d'un Logiciel Brut de Gestion d'Évènement -->
-                    <div id="projet7" class="project-card" onclick="openModal('modal7')">
-                        <div class="info-badge"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM216 336h24V272H216c-13.3 0-24-10.7-24-24s10.7-24 24-24h48c13.3 0 24 10.7 24 24v88h8c13.3 0 24 10.7 24 24s-10.7 24-24 24H216c-13.3 0-24-10.7-24-24s10.7-24 24-24zm40-208a32 32 0 1 1 0 64 32 32 0 1 1 0-64z"/></svg></div>
-                        <img src="images/logicieldev.avif" alt="Création d'un Logiciel Brut de Gestion d'Évènement" title="Création d'un Logiciel Brut de Gestion d'Évènement">
-                        <div class="project-info">
-                            <h3>Création d'un Logiciel Brut de Gestion d'Évènement</h3>
-                            <p>Développement d'un logiciel de gestion d'événements pour simplifier l'organisation et le suivi des événements.</p>
-                        </div>
-                    </div>
-                    <div id="modal7" class="modal">
-                        <div class="modal-content">
-                            <span class="close" onclick="closeModal('modal7')">&times;</span>
-                            <h3>Création d'un Logiciel Brut de Gestion d'Évènement</h3>
-                            <img src="images/gestion_evenement.png" alt="Création d'un Logiciel Brut de Gestion d'Évènement" title="Création d'un Logiciel Brut de Gestion d'Évènement">
-                            <p>Le projet consiste en la création d'un logiciel informatique destiné à la gestion d'événements médiévaux, visant à faciliter l'organisation et la mise en place de ces événements historiques. Le logiciel, conçu pour être utilisé sur tous les systèmes d'exploitation, comprend des fonctionnalités essentielles pour la gestion des plannings, des informations sur les festivals, des stands, des exposants et des stocks de marchandises. L'objectif principal est d'améliorer l'efficacité organisationnelle tout en offrant une interface utilisateur intuitive et fonctionnelle.</p>
-                            <h4>Compétences :</h4>
-                            <ul>
-                                <li>Conception et développement de logiciels</li>
-                                <li>Utilisation des technologies et frameworks de développement appropriés</li>
-                                <li>Gestion de projets collaboratifs</li>
-                                <li>Analyse et modélisation UML</li>
-                                <li>Tests et assurance qualité</li>
-                            </ul>
-                            <h4>Objectifs :</h4>
-                            <ul>
-                                <li>Analyse des besoins</li>
-                                <li>Conception du logiciel</li>
-                                <li>Développement</li>
-                                <li>Tests et déploiement</li>
-                            </ul>
-                            <h4>Travail en groupe :</h4>
-                            <p>Le projet a été réalisé par l'équipe A1-19 ‘Planiféodal’ composée de quatre membres :</p>
-                            <ul>
-                                <li>Chef(fe) de Projet : BURELLIER Loucas</li>
-                                <li>Membres de l'équipe : LEGLISE Adrien, SERRANO Nathan, BARNOUIN Clément</li>
-                            </ul>
-                            <h4>Travail individuel dans le groupe :</h4>
-                            <ul>
-                                <li>Chef(fe) de Projet : Coordination du projet, gestion des réunions et des communications, suivi de l'avancement.</li>
-                                <li>Membres de l'équipe : Analyse des besoins, conception UML, développement des fonctionnalités, réalisation des tests.</li>
-                            </ul>
-                            <h4>Techniques et savoirs faire acquis :</h4>
-                            <ul>
-                                <li>Analyse et modélisation</li>
-                                <li>Développement logiciel</li>
-                                <li>Gestion de projet</li>
-                                <li>Tests et assurance qualité</li>
-                            </ul>
-                            <h4>Conclusion :</h4>
-                            <p>Ce projet a permis de développer des compétences essentielles en conception et développement de logiciels, tout en renforçant la capacité à travailler en équipe et à gérer un projet complexe. Le logiciel final offre une solution efficace pour la gestion d'événements médiévaux, avec des fonctionnalités robustes et une interface utilisateur intuitive. La collaboration au sein de l'équipe A1-19 ‘Planiféodal’ a été un facteur clé de succès, permettant de surmonter les défis techniques et organisationnels.</p>
-                            <div id="main-container">
-                                <ul class="social-container">
-                                    <li class="item">
-                                        <a href="https://github.com/1Luckyle/Logiciel-Gestion-Evenement" target="_blank"
-                                            title="Github">
-                                            <span class="fab fa-github"></span>
-                                            <span class="bg github-bg"></span>
-                                            <span>Github</span>
-                                        </a>
-                                    </li>
-                                    <li class="item">
-                                        <a href="https://www.gricad-gitlab.univ-grenoble-alpes.fr/iut2-info-stud/2024-s2/r2.01.03/a1/serranon/mega-sae" target="_blank"
-                                            title="GitLab">
-                                            <span class="fab fa-gitlab"></span>
-                                            <span class="bg gitlab-bg"></span>
-                                            <span>GitLab</span>
-                                        </a>
-                                    </li>
-                            </div>
-                        </div>
-                    </div>
-
 
                     <!-- Projet 8 : Création et déploiement de services applicatifs / Développement d’une application -->
                     <div id="projet8" class="project-card" onclick="openModal('modal8')">
@@ -597,133 +255,464 @@
                         </div>
                         </div>
                     </div>
-                    
-                    
-                    <!-- Projet 9 : Conception et mise en œuvre d'une infrastructure réseau sécurisée à l'aide d'outils open-source -->
-                    <div id="projet9" class="project-card" onclick="openModal('modal9')">
-                        <div class="info-badge">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                            <path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM216 336h24V272H216c-13.3 0-24-10.7-24-24s10.7-24 
-                            24-24h48c13.3 0 24 10.7 24 24v88h8c13.3 0 24 10.7 24 24s-10.7 24-24 24H216c-13.3 0-24-10.7-24-24s10.7-24 
-                            24-24zm40-208a32 32 0 1 1 0 64 32 32 0 1 1 0-64z"/>
-                        </svg>
-                        </div>
-                        <!-- Image illustrative (à adapter) -->
-                        <img src="images/infrastructurereseau2.jpg" alt="Conception d'une infrastructure réseau sécurisée" 
-                            title="Conception d'une infrastructure réseau sécurisée" />
-                        <div class="project-info">
-                        <h3>Conception et Mise en Œuvre d’une Infrastructure Réseau Sécurisée</h3>
-                        <p>Création d’un réseau virtuel multi-serveurs, avec services DHCP, DNS, annuaire LDAP, 
-                            pare-feu et supervision centralisée.</p>
-                        </div>
-                    </div>
-  
-                    <!-- Modal projet 9 -->
-                    <div id="modal9" class="modal">
-                        <div class="modal-content">
-                        <span class="close" onclick="closeModal('modal9')">&times;</span>
-                        <h3>Conception et Mise en Œuvre d’une Infrastructure Réseau Sécurisée</h3>
-                        <img src="images/infrastructurereseau2.jpg" alt="Infrastructure réseau sécurisée" 
-                            title="Infrastructure réseau sécurisée" />
-                        <p>
-                            Cette SAE (S4.Deploi.01) a pour objectif de <strong>concevoir et déployer une architecture réseau</strong> 
-                            complète et sécurisée à l’aide d’outils open-source, sur des machines virtuelles et des réseaux virtuels.
-                            Le projet couvre l’installation de serveurs DHCP, DNS, d’un pare-feu, d’un serveur de fichiers, ainsi que 
-                            la supervision et la journalisation.
-                        </p>
-                        <h4>Objectifs :</h4>
-                        <ul>
-                            <li>Mettre en place un ou plusieurs réseaux virtuels (VM Debian ou Windows) sur Qemu/KVM ou Proxmox.</li>
-                            <li>Installer et configurer des services (DHCP, DNS, Apache/Nginx, Wiki, etc.).</li>
-                            <li>Sécuriser l’infrastructure avec un pare-feu (nftables) et un routage approprié.</li>
-                            <li>Superviser l’ensemble via un outil de monitoring (Icinga, Nagios...), 
-                                assurer la journalisation et la haute disponibilité.</li>
-                        </ul>
-                        <h4>Niveaux d’infrastructure :</h4>
-                        <ul>
-                            <li><strong>Minimale :</strong> Un unique réseau, DHCP, DNS unique, serveurs Web/DB, etc.</li>
-                            <li><strong>Améliorée :</strong> Plusieurs réseaux segmentés, pare-feu, DHCP multiples, DMZ, etc.</li>
-                            <li><strong>Avancée :</strong> Plusieurs routeurs, DNS over TLS/HTTPS, supervision avancée (Zabbix, SIEM), 
-                                annuaire LDAP, etc.</li>
-                        </ul>
-                        <h4>Compétences :</h4>
-                        <ul>
-                            <li>Administration système et réseau sous Linux (Debian 12, scripts Bash).</li>
-                            <li>Gestion de pare-feu, routage, VLAN, DMZ, etc.</li>
-                            <li>Virtualisation (Qemu/KVM, Proxmox) et conteneurisation (Docker).</li>
-                            <li>Configuration de services critiques (DHCP Kea, DNS Bind9, MariaDB, Wiki mdBook...).</li>
-                            <li>Tests d’intrusion basiques, automatisation d’installation, scripts de test et de supervision.</li>
-                        </ul>
-                        <h4>Livrables :</h4>
-                        <ul>
-                            <li><strong>Document de conception :</strong> Architecture, plan d’adressage, choix des logiciels.</li>
-                            <li><strong>Prototype :</strong> Première version fonctionnelle avec captures d’écran.</li>
-                            <li><strong>Scripts de test :</strong> Vérifications de connectivité, disponibilités des services, 
-                                sécurité (pare-feu).</li>
-                            <li><strong>Automatisation :</strong> Scripts d’installation et de configuration.</li>
-                            <li><strong>Rapport final et Wiki :</strong> Documentation technique complète, aspects sécurité, 
-                                retours d’expérience.</li>
-                        </ul>
-                        <h4>Conclusion :</h4>
-                        <p>
-                            Ce projet a permis de combiner des compétences en administration réseau, sécurité, virtualisation et 
-                            automatisation. Le résultat est une infrastructure robuste, segmentée et surveillée en temps réel, 
-                            répondant aux besoins d’une entreprise en quête de fiabilité et de protection contre les cybermenaces.
-                        </p>
-                        </div>
-                    </div>
 
-                    <!-- Projet de Stage -->
-                    <div id="projet10" class="project-card" onclick="openModal('modal0')">
-                        <div class="info-badge">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                <path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM216 336h24V272H216c-13.3 0-24-10.7-24-24s10.7-24 24-24h48c13.3 0 24 10.7 24 24v88h8c13.3 0 24 10.7 24 24s-10.7 24-24 24H216c-13.3 0-24-10.7-24-24s10.7-24 24-24zm40-208a32 32 0 1 1 0 64 32 32 0 1 1 0-64z"/>
-                            </svg>
-                        </div>
-                        <img src="images/stage_mathdoc.jpg" alt="Stage Mathdoc" title="Stage Mathdoc">
+                    <!-- Création d'un Logiciel Brut de Gestion d'Évènement -->
+                    <div id="projet7" class="project-card" onclick="openModal('modal7')">
+                        <div class="info-badge"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM216 336h24V272H216c-13.3 0-24-10.7-24-24s10.7-24 24-24h48c13.3 0 24 10.7 24 24v88h8c13.3 0 24 10.7 24 24s-10.7 24-24 24H216c-13.3 0-24-10.7-24-24s10.7-24 24-24zm40-208a32 32 0 1 1 0 64 32 32 0 1 1 0-64z"/></svg></div>
+                        <img src="images/logicieldev.avif" alt="Création d'un Logiciel Brut de Gestion d'Évènement" title="Création d'un Logiciel Brut de Gestion d'Évènement">
                         <div class="project-info">
-                            <h3>Stage Mathdoc – Tests Fonctionnels et Intégration Continue</h3>
-                            <p>Développement et automatisation de tests fonctionnels pour la chaîne de publication scientifique Open Journal Systems (OJS) avec Docker, GitLab CI/CD et Cypress.</p>
+                            <h3>Création d'un Logiciel Brut de Gestion d'Évènement</h3>
+                            <p>Développement d'un logiciel de gestion d'événements pour simplifier l'organisation et le suivi des événements.</p>
                         </div>
                     </div>
-                    <div id="modal0" class="modal">
+                    <div id="modal7" class="modal">
                         <div class="modal-content">
-                            <span class="close" onclick="closeModal('modal0')">&times;</span>
-                            <h3>Stage Mathdoc – Tests Fonctionnels et Intégration Continue</h3>
-                            <img src="images/stage_mathdoc.jpg" alt="Stage Mathdoc" title="Stage Mathdoc">
-                            <p>Dans le cadre de mon stage de deuxième année de BUT Informatique, j’ai intégré l’unité Mathdoc (CNRS/UGA) pour contribuer à la fiabilisation de la plateforme de publication scientifique OJS. L’objectif était d’assurer une transition fiable vers la version 3.4 d’OJS en mettant en place un environnement Dockerisé et des tests Cypress permettant de valider le comportement attendu des plugins et de l’interface utilisateur.</p>
+                            <span class="close" onclick="closeModal('modal7')">&times;</span>
+                            <h3>Création d'un Logiciel Brut de Gestion d'Évènement</h3>
+                            <img src="images/gestion_evenement.png" alt="Création d'un Logiciel Brut de Gestion d'Évènement" title="Création d'un Logiciel Brut de Gestion d'Évènement">
+                            <p>Le projet consiste en la création d'un logiciel informatique destiné à la gestion d'événements médiévaux, visant à faciliter l'organisation et la mise en place de ces événements historiques. Le logiciel, conçu pour être utilisé sur tous les systèmes d'exploitation, comprend des fonctionnalités essentielles pour la gestion des plannings, des informations sur les festivals, des stands, des exposants et des stocks de marchandises. L'objectif principal est d'améliorer l'efficacité organisationnelle tout en offrant une interface utilisateur intuitive et fonctionnelle.</p>
                             <h4>Compétences :</h4>
                             <ul>
-                                <li>Utilisation de Docker pour déployer un environnement de test</li>
-                                <li>Écriture de tests fonctionnels avec Cypress</li>
-                                <li>CI/CD avec GitLab (runners, cache, scripts)</li>
-                                <li>Bash, JavaScript, HTML, PHP</li>
-                                <li>Documentation technique, rapport LaTeX</li>
+                                <li>Conception et développement de logiciels</li>
+                                <li>Utilisation des technologies et frameworks de développement appropriés</li>
+                                <li>Gestion de projets collaboratifs</li>
+                                <li>Analyse et modélisation UML</li>
+                                <li>Tests et assurance qualité</li>
                             </ul>
-                            <h4>Travail individuel :</h4>
+                            <h4>Objectifs :</h4>
                             <ul>
-                                <li>Création et exécution de tests Cypress automatisés pour OJS 3.4</li>
-                                <li>Débogage d’environnements Docker (MySQL, Apache, PHP)</li>
-                                <li>Adaptation d’anciens tests PHP vers JavaScript</li>
-                                <li>Intégration au pipeline GitLab CI avec des scripts Bash personnalisés</li>
-                                <li>Documentation complète du processus de test et de configuration</li>
+                                <li>Analyse des besoins</li>
+                                <li>Conception du logiciel</li>
+                                <li>Développement</li>
+                                <li>Tests et déploiement</li>
                             </ul>
-                            <h4>Techniques et savoir-faire acquis :</h4>
+                            <h4>Travail en groupe :</h4>
+                            <p>Le projet a été réalisé par l'équipe A1-19 ‘Planiféodal’ composée de quatre membres :</p>
                             <ul>
-                                <li>Automatisation de tests (Cypress)</li>
-                                <li>Environnements conteneurisés (Docker)</li>
-                                <li>CI/CD avancée (GitLab pipelines)</li>
-                                <li>Travail avec des logiciels complexes en production (OJS)</li>
+                                <li>Chef(fe) de Projet : BURELLIER Loucas</li>
+                                <li>Membres de l'équipe : LEGLISE Adrien, SERRANO Nathan, BARNOUIN Clément</li>
+                            </ul>
+                            <h4>Travail individuel dans le groupe :</h4>
+                            <ul>
+                                <li>Chef(fe) de Projet : Coordination du projet, gestion des réunions et des communications, suivi de l'avancement.</li>
+                                <li>Membres de l'équipe : Analyse des besoins, conception UML, développement des fonctionnalités, réalisation des tests.</li>
+                            </ul>
+                            <h4>Techniques et savoirs faire acquis :</h4>
+                            <ul>
+                                <li>Analyse et modélisation</li>
+                                <li>Développement logiciel</li>
+                                <li>Gestion de projet</li>
+                                <li>Tests et assurance qualité</li>
                             </ul>
                             <h4>Conclusion :</h4>
-                            <p>Ce stage m’a permis d’acquérir une solide expérience en automatisation de tests, en configuration d’environnements Docker, ainsi qu’en intégration continue. J’ai également contribué activement à l’évolution d’un outil utilisé à l’échelle internationale pour la publication scientifique, tout en développant mes capacités de documentation et de communication technique.</p>
+                            <p>Ce projet a permis de développer des compétences essentielles en conception et développement de logiciels, tout en renforçant la capacité à travailler en équipe et à gérer un projet complexe. Le logiciel final offre une solution efficace pour la gestion d'événements médiévaux, avec des fonctionnalités robustes et une interface utilisateur intuitive. La collaboration au sein de l'équipe A1-19 ‘Planiféodal’ a été un facteur clé de succès, permettant de surmonter les défis techniques et organisationnels.</p>
                             <div id="main-container">
                                 <ul class="social-container">
                                     <li class="item">
-                                        <a href="blank" target="_blank" title="GitLab">
+                                        <a href="https://github.com/1Luckyle/Logiciel-Gestion-Evenement" target="_blank"
+                                            title="Github">
+                                            <span class="fab fa-github"></span>
+                                            <span class="bg github-bg"></span>
+                                            <span>Github</span>
+                                        </a>
+                                    </li>
+                                    <li class="item">
+                                        <a href="https://www.gricad-gitlab.univ-grenoble-alpes.fr/iut2-info-stud/2024-s2/r2.01.03/a1/serranon/mega-sae" target="_blank"
+                                            title="GitLab">
                                             <span class="fab fa-gitlab"></span>
                                             <span class="bg gitlab-bg"></span>
                                             <span>GitLab</span>
+                                        </a>
+                                    </li>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Développement d'un Site Web d'Entreprise -->
+                    <div id="projet6" class="project-card" onclick="openModal('modal6')">
+                        <div class="info-badge"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM216 336h24V272H216c-13.3 0-24-10.7-24-24s10.7-24 24-24h48c13.3 0 24 10.7 24 24v88h8c13.3 0 24 10.7 24 24s-10.7 24-24 24H216c-13.3 0-24-10.7-24-24s10.7-24 24-24zm40-208a32 32 0 1 1 0 64 32 32 0 1 1 0-64z"/></svg></div>
+                        <img src="images/creationsiteweb.webp" alt="Développement d'un Site Web d'Entreprise" title="Développement d'un Site Web d'Entreprise">
+                        <div class="project-info">
+                            <h3>Développement d'un Site Web d'Entreprise</h3>
+                            <p>Création d'un site web professionnel pour améliorer la présence en ligne et l'accessibilité de l'entreprise.</p>
+                        </div>
+                    </div>
+                    <div id="modal6" class="modal">
+                        <div class="modal-content">
+                            <span class="close" onclick="closeModal('modal6')">&times;</span>
+                            <h3>Développement d'un Site Web d'Entreprise</h3>
+                            <img src="images/SCCFrance.png" alt="Développement d'un Site Web d'Entreprise" title="Développement d'un Site Web d'Entreprise">
+                            <p>Ce projet a pour objectif de créer un site web institutionnel pour une entreprise du secteur numérique, destiné principalement à la génération Alpha, c'est-à-dire aux jeunes de 3ème en recherche de stage. Le site doit être pratique, sobre écologiquement et visuellement, et doit présenter l'entreprise de manière vulgarisée pour être compréhensible par un public non technique.</p>
+                            <h4>Compétences :</h4>
+                            <ul>
+                                <li>Conception et développement web</li>
+                                <li>Utilisation de CMS et d'outils de maquette (Whimsical)</li>
+                                <li>Compréhension des besoins utilisateurs</li>
+                                <li>Communication et présentation de l'information de manière simplifiée</li>
+                                <li>Collaboration en équipe et gestion de projet</li>
+                            </ul>
+                            <h4>Objectifs :</h4>
+                            <ul>
+                                <li>Recueil des besoins</li>
+                                <li>Conception de la maquette</li>
+                                <li>Développement du site web</li>
+                                <li>Vulgarisation des informations</li>
+                            </ul>
+                            <h4>Travail en groupe :</h4>
+                            <p>Le projet a été réalisé en groupe de trois personnes :</p>
+                            <ul>
+                                <li>Membre A & C - Fontanière Tristan et Barnouin Clément : Responsable de la recherche d'informations et de la rédaction de la fiche de présentation de l'entreprise.</li>
+                                <li>Membre B - Mitov Tsveteline : Responsable de la conception de la maquette du site web en utilisant Whimsical.</li>
+                                <li>Membre A & C - Fontanière Tristan et Barnouin Clément : Responsable du développement et de l'implémentation du site web.</li>
+                            </ul>
+                            <h4>Travail individuel dans le groupe :</h4>
+                            <ul>
+                                <li>Membre A - Fontanière Tristan : Recherche des informations sur l'entreprise, rédaction de la fiche de présentation.</li>
+                                <li>Membre B - Mitov Tsveteline : Conception de la maquette du site web, prise en compte des retours pour ajuster la maquette.</li>
+                                <li>Membre C - Barnouin Clément : Développement du site web, intégration des contenus, mise en place des fonctionnalités interactives.</li>
+                            </ul>
+                            <h4>Techniques et savoirs faire acquis :</h4>
+                            <ul>
+                                <li>Conception web</li>
+                                <li>Développement web</li>
+                                <li>Gestion de projet</li>
+                                <li>Vulgarisation de contenu</li>
+                            </ul>
+                            <h4>Conclusion :</h4>
+                            <p>Ce projet a permis de développer des compétences essentielles en conception et développement web, tout en renforçant la capacité à travailler en équipe et à vulgariser des informations techniques. Le site web résultant offre une présentation claire et attrayante de l'entreprise, adaptée aux jeunes de 3ème en recherche de stage.</p>
+                            <div id="main-container">
+                                <ul class="social-container">
+                                    <li class="item">
+                                        <a href="https://github.com/1Luckyle/Site-d-Entreprise-SCC-France" target="_blank"
+                                            title="Github">
+                                            <span class="fab fa-github"></span>
+                                            <span class="bg github-bg"></span>
+                                            <span>Github</span>
+                                        </a>
+                                    </li>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Installation de Services Réseau -->
+                    <div id="projet5" class="project-card" onclick="openModal('modal5')">
+                        <div class="info-badge"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM216 336h24V272H216c-13.3 0-24-10.7-24-24s10.7-24 24-24h48c13.3 0 24 10.7 24 24v88h8c13.3 0 24 10.7 24 24s-10.7 24-24 24H216c-13.3 0-24-10.7-24-24s10.7-24 24-24zm40-208a32 32 0 1 1 0 64 32 32 0 1 1 0-64z"/></svg></div>
+                        <img src="images/installationreseau.avif" alt="Installation de Services Réseau" title="Installation de Services Réseau">
+                        <div class="project-info">
+                            <h3>Installation de Services Réseau</h3>
+                            <p>Configuration et déploiement de services réseau pour assurer la connectivité et la communication entre les systèmes.</p>
+                        </div>
+                    </div>
+                    <div id="modal5" class="modal">
+                        <div class="modal-content">
+                            <span class="close" onclick="closeModal('modal5')">&times;</span>
+                            <h3>Installation de Services Réseau</h3>
+                            <img src="images/installationguide.avif" alt="Installation de Services Réseau" title="Installation de Services Réseau">
+                            <p>Ce projet consiste en l'installation et la configuration d'un serveur Debian 12 sur une machine virtuelle, incluant l'installation des services Apache, PostgreSQL, et PHP. Le but est de mettre en place un environnement serveur fonctionnel qui peut être interrogé depuis la machine hôte, avec une attention particulière à la sécurité et à la gestion des services.</p>
+                            <h4>Compétences :</h4>
+                            <ul>
+                                <li>Installation et configuration de serveurs sous Debian</li>
+                                <li>Gestion des services réseau (Apache, PostgreSQL, PHP)</li>
+                                <li>Sécurisation des services et des accès réseau</li>
+                                <li>Utilisation de machines virtuelles avec Qemu/KVM</li>
+                                <li>Rédaction de guides techniques en anglais</li>
+                            </ul>
+                            <h4>Objectifs :</h4>
+                            <ul>
+                                <li>Préparation et installation de Debian</li>
+                                <li>Installation des services réseau</li>
+                                <li>Configuration de l'accès réseau</li>
+                                <li>Sécurisation</li>
+                            </ul>
+                            <h4>Travail en groupe :</h4>
+                            <p>Le projet a été réalisé de manière individuelle, mais des échanges réguliers avec d'autres étudiants ont permis de partager des bonnes pratiques et de résoudre des problèmes communs.</p>
+                            <h4>Travail individuel :</h4>
+                            <ul>
+                                <li>Préparation de l'installation : Téléchargement de l'image ISO de Debian, vérification de son intégrité.</li>
+                                <li>Création et configuration de la machine virtuelle : Paramétrage de Qemu/KVM, installation de Debian sans interface graphique.</li>
+                                <li>Installation des services réseau : Utilisation d'APT pour installer Apache, PostgreSQL, et PHP, configuration des fichiers de service.</li>
+                                <li>Configuration de l'accès réseau : Mise en place de la redirection de ports, test des services depuis la machine hôte.</li>
+                                <li>Sécurisation des services : Gestion des accès par clé SSH, mise en place de HTTPS avec un certificat auto-signé.</li>
+                            </ul>
+                            <h4>Techniques et savoirs faire acquis :</h4>
+                            <ul>
+                                <li>Installation de systèmes et services</li>
+                                <li>Configuration des services</li>
+                                <li>Gestion des accès réseau</li>
+                                <li>Rédaction technique</li>
+                            </ul>
+                            <h4>Conclusion :</h4>
+                            <p>Ce projet a permis de développer des compétences essentielles en installation et configuration de serveurs, gestion des services réseau, et sécurisation des accès. La rédaction d'un guide technique détaillé a également renforcé la capacité à communiquer de manière claire et structurée sur des sujets techniques. Le serveur installé et configuré est maintenant prêt à être utilisé pour des applications de développement et de test, avec une sécurité renforcée.</p>
+                            <div id="main-container">
+                                <ul class="social-container">
+                                    <li class="item">
+                                        <a href="https://github.com/1Luckyle/Installation-Services-Reseaux" target="_blank"
+                                            title="Github">
+                                            <span class="fab fa-github"></span>
+                                            <span class="bg github-bg"></span>
+                                            <span>Github</span>
+                                        </a>
+                                    </li>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Installation d'un Poste pour le Développement -->                    
+                    <div id="projet4" class="project-card" onclick="openModal('modal4')">
+                        <div class="info-badge"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM216 336h24V272H216c-13.3 0-24-10.7-24-24s10.7-24 24-24h48c13.3 0 24 10.7 24 24v88h8c13.3 0 24 10.7 24 24s-10.7 24-24 24H216c-13.3 0-24-10.7-24-24s10.7-24 24-24zm40-208a32 32 0 1 1 0 64 32 32 0 1 1 0-64z"/></svg></div>
+                        <img src="images/installationposte.avif" alt="Installation d'un Poste pour le Développement" title="Installation d'un Poste pour le Développement">
+                        <div class="project-info">
+                            <h3>Installation d'un Poste pour le Développement</h3>
+                            <p>Mise en place d'un environnement de développement complet avec les outils nécessaires pour le développement logiciel.</p>
+                        </div>
+                    </div>
+                    <div id="modal4" class="modal">
+                        <div class="modal-content">
+                            <span class="close" onclick="closeModal('modal4')">&times;</span>
+                            <h3>Installation d'un Poste pour le Développement</h3>
+                            <img src="images/installationposte2.avif" alt="Installation d'un Poste pour le Développement" title="Installation d'un Poste pour le Développement">
+                            <p>Ce projet consiste en l'installation complète d'un poste de travail sous Debian 11.8 avec l'environnement de bureau KDE/Plasma, incluant la mise en place d'un système de gestion de paquets et l'installation d'outils de développement tels que JDK et Netbeans. L'objectif principal est de préparer un environnement de développement robuste et sécurisé pour les développeurs.</p>
+                            <h4>Compétences :</h4>
+                            <ul>
+                                <li>Rédaction d'une carte mentale d'installation</li>
+                                <li>Installation et configuration de systèmes d'exploitation Linux</li>
+                                <li>Utilisation de gestionnaires de paquets (apt, snap, flatpak)</li>
+                                <li>Configuration d'environnements de bureau (KDE/Plasma)</li>
+                                <li>Installation d'outils de développement (JDK, Git, Netbeans)</li>
+                                <li>Gestion et sécurisation des utilisateurs sous Linux</li>
+                            </ul>
+                            <h4>Objectifs :</h4>
+                            <ul>
+                                <li>Préparation de l'installation</li>
+                                <li>Installation du système Debian</li>
+                                <li>Compléter le système Debian</li>
+                                <li>Installation des outils de développement</li>
+                            </ul>
+                            <h4>Travail en groupe :</h4>
+                            <p>Le projet a été réalisé individuellement mais en se basant sur des discussions de groupe pour partager les meilleures pratiques et résoudre les problèmes rencontrés.</p>
+                            <h4>Travail individuel :</h4>
+                            <ul>
+                                <li>Création d'une carte mentale :</li>
+                                <img src="images/SAE 1.03 - Carte Mentale - Barnouin Clément-Map 1.png" alt="Carte Mentale d'Installation de Poste de Travail" title="Carte Mentale">
+                                <li>Préparation de l'installation : Téléchargement et vérification des fichiers ISO de Debian.</li>
+                                <li>Installation du système Debian : Exécution des commandes d'installation, configuration des paramètres système.</li>
+                                <li>Configuration de l'environnement de bureau : Réglage de la résolution, ajout de widgets, configuration de sudo.</li>
+                                <li>Installation et configuration des outils de développement : Installation de JDK, Git, et Netbeans en utilisant différents gestionnaires de paquets.</li>
+                            </ul>
+                            <h4>Techniques et savoirs faire acquis :</h4>
+                            <ul>
+                                <li>Installation de systèmes d'exploitation</li>
+                                <li>Gestion des paquets</li>
+                                <li>Configuration utilisateur</li>
+                                <li>Installation d'outils de développement</li>
+                                <li>Vérifications d'intégrité avec sha512sum</li>
+                            </ul>
+                            <h4>Conclusion :</h4>
+                            <p>Ce projet a permis de développer des compétences essentielles pour la mise en place d'un environnement de développement Linux complet et fonctionnel. La maîtrise de l'installation et de la configuration de Debian, ainsi que l'utilisation des différents gestionnaires de paquets, sont des compétences précieuses pour tout développeur travaillant sous Linux.</p>
+                            <div id="main-container">
+                                <ul class="social-container">
+                                    <li class="item">
+                                        <a href="https://github.com/1Luckyle/Installation-Poste-de-Travail" target="_blank"
+                                            title="Github">
+                                            <span class="fab fa-github"></span>
+                                            <span class="bg github-bg"></span>
+                                            <span>Github</span>
+                                        </a>
+                                    </li>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Exploitation d'une Base de Données -->
+                    <div id="projet3" class="project-card" onclick="openModal('modal3')">
+                        <div class="info-badge"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM216 336h24V272H216c-13.3 0-24-10.7-24-24s10.7-24 24-24h48c13.3 0 24 10.7 24 24v88h8c13.3 0 24 10.7 24 24s-10.7 24-24 24H216c-13.3 0-24-10.7-24-24s10.7-24 24-24zm40-208a32 32 0 1 1 0 64 32 32 0 1 1 0-64z"/></svg></div>
+                        <img src="images/exploitationdatabase.webp" alt="Exploitation d'un Base de Données" title="Exploitation d'un Base de Données">
+                        <div class="project-info">
+                            <h3>Exploitation d'une Base de Données</h3>
+                            <p>Utilisation de SQL pour extraire, analyser et visualiser des données à partir d'une base de données existante.</p>
+                        </div>
+                    </div>
+                    <div id="modal3" class="modal">
+                        <div class="modal-content">
+                            <span class="close" onclick="closeModal('modal3')">&times;</span>
+                            <h3>Exploitation d'une Base de Données</h3>
+                            <img src="images/exploitationdatabase2.avif" alt="Exploitation d'un Base de Données" title="Exploitation d'un Base de Données">
+                            <p>Ce projet se concentre sur l'exploitation de la base de données Open Food Facts pour analyser la relation entre le Nutri-Score (ABCDE) et les variables nutritionnelles pour les produits de la famille 'en:cereals' aux États-Unis. L'objectif principal est de nettoyer et d'explorer les données, d'en extraire celles pertinentes et de les analyser pour tirer des conclusions sur la qualité nutritionnelle des produits.</p>
+                            <h4>Compétences :</h4>
+                            <ul>
+                                <li>Manipulation et extraction de données avec SQL</li>
+                                <li>Utilisation de PostgreSQL pour l'analyse de grandes bases de données</li>
+                                <li>Techniques de nettoyage de données</li>
+                                <li>Visualisation de données pour l'analyse statistique</li>
+                                <li>Compréhension et interprétation des scores nutritionnels</li>
+                            </ul>
+                            <h4>Objectifs :</h4>
+                            <ul>
+                                <li>Exploration des données</li>
+                                <li>Nettoyage des données</li>
+                                <li>Analyse des données</li>
+                                <li>Visualisation des résultats</li>
+                            </ul>
+                            <h4>Travail en groupe :</h4>
+                            <p>Le projet a été réalisé en binôme avec une répartition des tâches comme suit :</p>
+                            <ul>
+                                <li>Un membre était initialement responsable de l'extraction et du nettoyage initial des données.</li>
+                                <li>L'autre membre s'occupait de l'analyse approfondie et de la visualisation des résultats.</li>
+                            </ul>
+                            <h4>Travail individuel dans le groupe :</h4>
+                            <ul>
+                                <li>Membre A - Bils Brayan : Rédaction du dossier de Gestion de Projet.</li>
+                                <li>Membre B - Barnouin Clément : Extraction des données depuis la base PostgreSQL, création des tables temporaires, nettoyage des données, analyse des données nettoyées, création des requêtes SQL pour l'exploration et la visualisation des résultats, préparation des graphiques.</li>
+                            </ul>
+                            <h4>Techniques et savoirs faire acquis :</h4>
+                            <ul>
+                                <li>SQL avancé</li>
+                                <li>PostgreSQL</li>
+                                <li>Nettoyage de données</li>
+                                <li>Visualisation des données</li>
+                                <li>Analyse nutritionnelle</li>
+                            </ul>
+                            <h4>Conclusion :</h4>
+                            <p>Ce projet a permis de développer des compétences clés en extraction, nettoyage et analyse de données, tout en renforçant la capacité à travailler en équipe sur des projets techniques. L'analyse des données a révélé des tendances significatives entre le Nutri-Score et les variables nutritionnelles des céréales aux États-Unis, soulignant l'importance de choisir des produits avec des scores nutritionnels plus favorables pour une alimentation plus saine.</p>
+                            <div id="main-container">
+                                <ul class="social-container">
+                                    <li class="item">
+                                        <a href="https://github.com/1Luckyle/Exploitation-Base-de-Donnees" target="_blank"
+                                            title="Github">
+                                            <span class="fab fa-github"></span>
+                                            <span class="bg github-bg"></span>
+                                            <span>Github</span>
+                                        </a>
+                                    </li>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Création d'une Base de Données -->
+                    <div id="projet2" class="project-card" onclick="openModal('modal2')">
+                        <div class="info-badge"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM216 336h24V272H216c-13.3 0-24-10.7-24-24s10.7-24 24-24h48c13.3 0 24 10.7 24 24v88h8c13.3 0 24 10.7 24 24s-10.7 24-24 24H216c-13.3 0-24-10.7-24-24s10.7-24 24-24zm40-208a32 32 0 1 1 0 64 32 32 0 1 1 0-64z"/></svg></div>
+                        <img src="images/creationdatabase.avif" alt="Création d'une Base de Données" title="Création d'une Base de Données">
+                        <div class="project-info">
+                            <h3>Création d'une Base de Données</h3>
+                            <p>Conception et implémentation d'une base de données relationnelle pour gérer les informations d'une entreprise.</p>
+                        </div>
+                    </div>
+                    <div id="modal2" class="modal">
+                        <div class="modal-content">
+                            <span class="close" onclick="closeModal('modal2')">&times;</span>
+                            <h3>Création d'une Base de Données</h3>
+                            <img src="images/creationdatabase2.avif" alt="Création d'une Base de Données" title="Création d'une Base de Données">
+                            <p>Ce projet consiste en la conception et l'implémentation d'une base de données relationnelle sous PostgreSQL pour modéliser et analyser les données du naufrage du Titanic. Le projet inclut la création du schéma de la base de données, le peuplement de celle-ci à partir de fichiers CSV, ainsi que l'écriture de requêtes pour extraire et analyser les données pertinentes.</p>
+                            <h4>Compétences :</h4>
+                            <ul>
+                                <li>Modélisation de bases de données relationnelles</li>
+                                <li>Utilisation de PostgreSQL pour l'implémentation de bases de données</li>
+                                <li>Écriture de requêtes SQL complexes</li>
+                                <li>Analyse de données à partir de fichiers CSV</li>
+                                <li>Gestion de projets collaboratifs en environnement académique</li>
+                            </ul>
+                            <h4>Objectifs :</h4>
+                            <ul>
+                                <li>Conception de la base de données</li>
+                                <li>Implémentation sous PostgreSQL</li>
+                                <li>Peuplement de la base</li>
+                                <li>Analyse des données</li>
+                            </ul>
+                            <h4>Travail en groupe :</h4>
+                            <p>Le projet a été réalisé en binôme (ou trinôme) avec une répartition claire des tâches :</p>
+                            <ul>
+                                <li>Un membre était responsable de la modélisation du schéma et de la justification des relations.</li>
+                                <li>Un autre membre s'occupait de l'implémentation du schéma et de l'écriture des scripts SQL pour la création et la suppression des tables.</li>
+                                <li>Lss deux membres, si présent, gérait le peuplement de la base et l'écriture des requêtes d'analyse.</li>
+                            </ul>
+                            <h4>Travail individuel dans le groupe :</h4>
+                            <ul>
+                                <li>Membre A - Fontanière Tristan : Modélisation du schéma relationnel, rédaction de la justification des choix de modélisation.</li>
+                                <li>Membre B - Barnouin Clément : Implémentation du schéma sous PostgreSQL, création des scripts `create.sql` et `drop.sql`.</li>
+                                <li>Membre A & B - Fontanière Tristan et Barnouin Clément : Importation des données, écriture des requêtes d'analyse dans le fichier `testinfos.sql`.</li>
+                            </ul>
+                            <h4>Techniques et savoirs faire acquis :</h4>
+                            <ul>
+                                <li>Modélisation des données</li>
+                                <li>PostgreSQL</li>
+                                <li>SQL</li>
+                                <li>Travail en équipe</li>
+                            </ul>
+                            <h4>Conclusion :</h4>
+                            <p>Ce projet nous a permis de développer des compétences essentielles en modélisation et gestion de bases de données, tout en travaillant de manière collaborative. La base de données résultante offre un outil puissant pour l'analyse des facteurs ayant influencé le naufrage du Titanic, illustrant ainsi l'importance d'une bonne conception et d'une implémentation rigoureuse des bases de données dans la gestion et l'analyse des données complexes.</p>
+                            <div id="main-container">
+                                <ul class="social-container">
+                                    <li class="item">
+                                        <a href="https://github.com/1Luckyle/Creation-Base-de-Donnees" target="_blank"
+                                            title="Github">
+                                            <span class="fab fa-github"></span>
+                                            <span class="bg github-bg"></span>
+                                            <span>Github</span>
+                                        </a>
+                                    </li>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Algorithme de Tri en Java -->
+                    <div id="projet1" class="project-card" onclick="openModal('modal1')">
+                        <div class="info-badge"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512zM216 336h24V272H216c-13.3 0-24-10.7-24-24s10.7-24 24-24h48c13.3 0 24 10.7 24 24v88h8c13.3 0 24 10.7 24 24s-10.7 24-24 24H216c-13.3 0-24-10.7-24-24s10.7-24 24-24zm40-208a32 32 0 1 1 0 64 32 32 0 1 1 0-64z"/></svg></div>
+                        <img src="images/alogojava.avif" alt="Algorithme de Tri en Java" title="Algorithme de Tri en Java">
+                        <div class="project-info">
+                            <h3>Algorithme de Tri en Java</h3>
+                            <p>Développement d'un algorithme de tri efficace en Java pour optimiser les performances de traitement des données.</p>
+                        </div>
+                    </div>
+                    <div id="modal1" class="modal">
+                        <div class="modal-content">
+                            <span class="close" onclick="closeModal('modal1')">&times;</span>
+                            <h3>Algorithme de Tri en Java</h3>
+                            <img src="images/classementdepeche.png" alt="Algorithme de Tri en Java" title="Algorithme de Tri en Java">
+                            <p>Le projet "Classification automatique" a pour objectif de créer un programme de classification automatique de dépêches journalistiques en utilisant des algorithmes de tri en Java. Le programme doit être capable de classer chaque dépêche dans l'une des cinq catégories suivantes : ENVIRONNEMENT-SCIENCES, CULTURE, ÉCONOMIE, POLITIQUE, SPORTS. Le processus inclut la création de lexiques pour chaque catégorie et le calcul de scores pour déterminer la catégorie appropriée pour chaque dépêche.</p>
+                            <h4>Compétences :</h4>
+                            <ul>
+                                <li>Programmation en Java</li>
+                                <li>Création et manipulation de structures de données</li>
+                                <li>Analyse de texte et extraction de mots-clés</li>
+                                <li>Conception d'algorithmes de tri et de classification</li>
+                                <li>Travail collaboratif et gestion de projet</li>
+                            </ul>
+                            <h4>Objectifs :</h4>
+                            <ul>
+                                <li>Création des lexiques</li>
+                                <li>Chargement et manipulation des lexiques</li>
+                                <li>Calcul des scores</li>
+                                <li>Automatisation et tests</li>
+                            </ul>
+                            <h4>Travail en groupe :</h4>
+                            <p>Le projet a été réalisé en binôme avec une répartition des tâches claires :</p>
+                            <ul>
+                                <li>Un membre était responsable de la création manuelle des lexiques et de la rédaction des fichiers nécessaires.</li>
+                                <li>L'autre membre s'occupait du développement des algorithmes et des méthodes pour le chargement et la manipulation des lexiques.</li>
+                            </ul>
+                            <h4>Travail individuel dans le groupe :</h4>
+                            <ul>
+                                <li>Membre A - Tristan Fontanière : Création des fichiers lexiques pour chaque catégorie, vérification et ajustement des mots-clés.</li>
+                                <li>Membre B - Clément Barnouin : Développement des algorithmes de chargement des lexiques, calcul des scores et classification des dépêches, tests et optimisation du programme.</li>
+                            </ul>
+                            <h4>Techniques et savoirs faire acquis :</h4>
+                            <ul>
+                                <li>Programmation en Java</li>
+                                <li>Analyse de texte</li>
+                                <li>Algorithmique</li>
+                                <li>Travail collaboratif</li>
+                                <li>Tests et validation</li>
+                            </ul>
+                            <h4>Conclusion :</h4>
+                            <p>Ce projet a permis de développer des compétences clés en programmation Java, analyse de texte et conception d'algorithmes. Le programme final offre une solution efficace pour la classification automatique de dépêches journalistiques, avec des résultats satisfaisants en termes de précision et de rapidité. La collaboration en binôme a également renforcé les compétences en gestion de projet et en travail d'équipe.</p>
+                            <div id="main-container">
+                                <ul class="social-container">
+                                    <li class="item">
+                                        <a href="https://github.com/1Luckyle/Algorithme-de-Tri" target="_blank"
+                                            title="Github">
+                                            <span class="fab fa-github"></span>
+                                            <span class="bg github-bg"></span>
+                                            <span>Github</span>
                                         </a>
                                     </li>
                                 </ul>
